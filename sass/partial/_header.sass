@@ -1,0 +1,311 @@
+.logo
+  display: flex
+  flex-direction: row
+  align-items: center
+  h3
+    padding-left: 5px
+    font-size: 18px
+    font-weight: 900
+    p
+      font-weight: 700
+      font-size: 14px
+    img
+      width: 100px
+.header-container
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+.header_telephone-button
+  position: relative
+  border: 1px solid #1bb1dc
+  border-radius: 50px
+  padding: 5px
+
+#topbar
+  // background: rgba(#000, .5 )
+  padding: 10px 0 5px 0
+  font-size: 16px
+  transition: all 0.5s
+  .topbar_links
+    display: flex
+    flex-direction: row
+    align-items: center
+    .social_mail
+      padding-right: 30px
+      a
+        text-decoration: none
+        font-size: 25px
+        transition: .6s
+        font-weight: 500
+        &:hover
+          color: #1b5fdc
+        i
+          font-size: 16px
+    .social-links
+      a
+        width: 25px
+        height: 25px
+        background: #1bb1dc
+        border-radius: 12px
+        color: #fff
+        padding: 4px 6px
+        display: inline-block
+        line-height: 1px
+        i
+          transition: .5s
+        .fa-whatsapp:hover
+          color: #25D366
+        .fa-facebook:hover
+          color: #3B5998
+        .fa-twitter:hover
+          color: #3B5998
+        .fa-linkedin:hover
+          color: #0077B5
+        .fa-instagram:hover
+          color: #be2c6c
+      &:first-child
+        border-left: 0
+.topbar_number
+  position: relative
+  font-size: 16px
+  padding-left: 70px
+  a
+    text-decoration: none
+    &:hover
+      color: #333
+  &-btn
+    position: relative
+    display: inline-block
+    background-color: #1bb1dc
+    padding: 5px 10px
+    border: 1px solid #1bb1dc
+    color: #fff
+    border-radius: 50px
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 1.5em
+      height: 100%
+      background-color: rgba(#fff, .6 )
+      transform: translateX(-4em) skewX(-45deg)
+      transition: 0.5s
+      animation: move-light 1.5s infinite
+    &:hover
+      &::before
+        // transform: translateX(10em) skewX(-45deg)
+        // animation: move-light .5s
+    @keyframes move-light
+      from
+        transform: translateX(-4em) skewX(-45deg)
+      to
+        transform: translateX(10em) skewX(-45deg)
+.topbar_lang
+  display: flex
+  align-items: center
+  justify-content: center
+  a
+    font-size: 13px
+    position: relative
+    cursor: pointer
+    text-decoration: none
+    margin-right: 15px
+    color: #fff
+    transition: .5s
+    font-weight: 900
+    &:hover
+      color: #333
+    span
+      background: #1bb1dc
+      padding: 5px
+      width: 30px
+      height: 30px
+      border-radius: 15px
+    // z-index: 10
+    // &::before
+    //   content: ""
+    //   position: absolute
+    //   top: 0
+    //   right: 0
+    //   width: 25px
+    //   height: 25px
+    //   background: #1bb1dc
+    //   border-radius: 15px
+
+#header
+  background-color: #fff
+  height: 125px
+  transition: all 0.5s
+  z-index: 997
+  transition: all 0.5s
+  padding: 0 0 10px 0
+  position: fixed
+  left: 0
+  top: 0
+  right: 0
+  transition: all 0.5s
+  z-index: 997
+
+#header.header-scrolled,
+#header.header-pages
+  height: 75px
+  padding: 5px 0
+  background-color: #fff
+  color: #fff
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3)
+
+#header.header-scrolled #topbar,
+#header.header-pages #topbar
+  display: none
+
+// #header .logo h1
+//     font-size: 36px
+//     margin: 0
+//     padding: 0
+//     line-height: 1
+//     font-weight: 400
+//     letter-spacing: 3px
+//     text-transform: uppercase
+
+// #header .logo h1 a,
+// #header .logo h1 a:hover
+//     color: #413e66
+//     text-decoration: none
+
+#header .logo img
+  padding: 0
+  max-height: 65px
+
+.main-pages
+  margin-top: 60px
+
+/* Desktop Navigation */
+#header.header-scrolled .main-nav,
+#header.header-pages .main-nav
+  display: block
+
+.main-nav,
+.main-nav *
+  margin: 0
+  padding: 0
+  list-style: none
+
+.main-nav > ul > li
+  position: relative
+  white-space: nowrap
+  float: left
+
+.main-nav a
+  display: block
+  position: relative
+  color: #000
+  padding: 0 10px
+  transition: 0.3s
+  font-size: 18px
+  font-family: "Open Sans", sans-serif
+  // text-transform: uppercase
+  font-weight: 700
+
+.main-nav a:hover,
+.main-nav .active > a,
+.main-nav li:hover > a
+  color: #1bb1dc
+  text-decoration: none
+
+//  Mobile Navigation 
+
+.mobile-nav
+  position: fixed
+  top: 0
+  bottom: 0
+  z-index: 9999
+  overflow-y: auto
+  left: -260px
+  width: 260px
+  padding-top: 18px
+  background: rgba(40, 38, 70, 0.8)
+  transition: 0.4s
+
+.mobile-nav *
+  margin: 0
+  padding: 0
+  list-style: none
+
+.mobile-nav a
+  display: block
+  position: relative
+  color: #fff
+  padding: 10px 20px
+  font-weight: 500
+
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a
+  color: #8dc2fa
+  text-decoration: none
+
+.mobile-nav-toggle
+  padding-top: 10px
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 9998
+  border: 0
+  background: none
+  font-size: 24px
+  transition: all 0.4s
+  outline: none !important
+  line-height: 1
+  cursor: pointer
+  text-align: right
+
+.mobile-nav-toggle i
+  margin: 18px 18px 0 0
+  color: #065e77
+
+.mobile-nav-overly
+  width: 100%
+  height: 100%
+  z-index: 9997
+  top: 0
+  left: 0
+  position: fixed
+  background: rgba(40, 38, 70, 0.8)
+  overflow: hidden
+  display: none
+
+.mobile-nav-active
+  overflow: hidden
+
+.mobile-nav-active .mobile-nav
+  left: 0
+
+.mobile-nav-active .mobile-nav-toggle i
+  color: #fff
+
+.mobile_menu
+  display: none
+// Back to top button
+
+.back-to-top
+  position: fixed
+  display: none
+  background: #1bb1dc
+  color: #fff
+  width: 44px
+  height: 44px
+  text-align: center
+  line-height: 1
+  font-size: 16px
+  border-radius: 50%
+  right: 15px
+  bottom: 15px
+  transition: background 0.5s
+  z-index: 11
+
+  & i
+    padding-top: 12px
+    color: #fff
+// Back to top button End

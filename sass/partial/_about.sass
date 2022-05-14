@@ -1,0 +1,149 @@
+.about
+    position: relative
+    &_title
+        position: relative
+        display: flex
+        margin: 40px 0
+        h2
+            font-weight: 700
+            font-size: 35px
+            &::after
+                position: absolute
+                content: ""
+                bottom: -10%
+                left: 0
+                height: 3px
+                width: 8%
+                background-color: #1bb1dc
+    &_content
+        position: relative
+        display: flex
+        align-items: center
+        height: 560px
+        &-text
+            color: #1bb1dc
+            font-weight: 700
+            font-size: 28px
+            line-height: 40px
+            p
+                text-align: center
+
+        &-img
+            position: relative
+            // width: 600px
+            // height: 500px
+    &_card
+        position: relative
+        height: 280px
+        #multimodal, #shipmodal
+            transition-duration: 1.5s
+        .about_card-title
+            padding: 30px 0 0 30px
+            color: #000
+            font-weight: 700
+        &:hover .about_card-title
+            color: #fff
+        &:hover #multimodal
+            stroke: #facc00
+        #shipmodal
+            stroke: #1bb1dc
+        &:hover #shipmodal
+            stroke: #facc00
+        &:hover .about_card-content-text
+            color: #fff
+        &::before
+            transform: scaleX(0)
+            transform-origin: bottom right
+            content: " "
+            display: block
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            inset: 0 0 0 0
+            background: #09388a
+            z-index: -1
+            transition: transform .7s ease
+        &:hover::before
+            transform: scaleX(1)
+            transform-origin: bottom left
+
+        &-content
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &-text
+                ul
+                    li
+                        font-weight: 700
+                        font-size: 16px
+                        list-style: none
+                        padding-top: 10px
+                        font-size: 20px
+            &-second
+                align-items: start
+                li
+                    margin-top: 30px
+.direction_title
+    position: relative
+    display: flex
+    margin: 40px 0
+    h2
+        font-weight: 700
+        font-size: 35px
+        &::after
+            position: absolute
+            content: ""
+            bottom: -10%
+            left: 0
+            height: 3px
+            width: 8%
+            background-color: #1bb1dc
+.direction_country
+    position: relative
+    li
+        font-size: 18px
+        margin-top: 10px
+        display: flex
+        flex-direction: row
+        align-items: center
+        list-style: none
+        img
+            width: 40px
+            margin-right: 15px
+.direction_map
+    width: 100%
+
+.work
+    position: relative
+    background: #fff url('../img/about.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    background-attachment: fixed
+    &-color
+        padding-top: 50px
+        padding-bottom: 50px
+        background-color: rgba(#1bb1dc, .4 )
+    &_content
+        padding: 10px 0
+        h3
+            font-weight: 900
+            font-size: 33px
+            color: #fff
+        ul
+            display: flex
+            flex-direction: column
+            width: 100%
+            position: relative
+            li
+                position: relative
+                color: #ffffff
+                padding-top: 10px
+                font-size: 25px
+                font-weight: 700
+                list-style-image: url(../img/line.png)
+                &::marker
+                    color: red
+                    font-size: 1.5em
