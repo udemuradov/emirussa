@@ -7,21 +7,21 @@
 //         width: 100%
 //         // top: 0
 //         // left: 0
-//     .item-slide1
+//     .item1
 //         height: 100vh
 //         width: 100%
 //         background: #fff url('../img/fullscreen/1.webp')
 //         background-position: bottom
 //         background-repeat: no-repeat
 //         background-size: cover
-//     .item-slide2
+//     .item2
 //         height: 100vh
 //         width: 100%
 //         background: #fff url('../img/fullscreen/2.jpg')
 //         background-position: bottom
 //         background-repeat: no-repeat
 //         background-size: cover
-//     .item-slide3
+//     .item3
 //         height: 100vh
 //         width: 100%
 //         background: #fff url('../img/fullscreen/3.jpg')
@@ -49,7 +49,7 @@
 //     .slide_title-third
 //         top: 150px
 //         left: 200px
-// .slider .item-slide1.active h1
+// .slider .item1.active h1
 //     animation: fadeInLeftBig ease 1s
 
 // .fullscreen_scrolldown
@@ -182,4 +182,191 @@
 
 
 
+
+.fullscreen .item 
+  height: 80vh
+  position: relative
+
+.fullscreen .item img 
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.fullscreen .item .cover-slide 
+  padding: 75px 0
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background: rgba(0, 0, 0, 0.6)
+  display: flex
+  align-items: center
+
+.fullscreen .item .cover-slide .header-content 
+  position: relative
+  padding: 56px
+  overflow: hidden
+
+.fullscreen .item .cover-slide .header-content .line-slide 
+  content: ""
+  display: inline-block
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  position: absolute
+  border: 9px solid $green
+  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%)
+  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%)
+
+.fullscreen .item .cover-slide .header-content h2 
+  font-weight: 300
+  font-size: 35px
+  color: #fff
+
+.fullscreen .item .cover-slide .header-content h1 
+  font-size: 56px
+  font-weight: 600
+  margin: 5px 0 20px
+  word-spacing: 3px
+  color: #fff
+
+.fullscreen .item .cover-slide .header-content h4 
+  font-size: 24px
+  font-weight: 300
+  line-height: 36px
+  color: #fff
+
+.fullscreen .owl-item.active h1 
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  animation-name: fadeInDown
+  animation-delay: 0.3s
+
+.fullscreen .owl-item.active h2 
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  animation-name: fadeInDown
+  animation-delay: 0.3s
+
+.fullscreen .owl-item.active h4 
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  animation-name: fadeInUp
+  animation-delay: 0.3s
+
+.fullscreen .owl-item.active .line-slide 
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  animation-name: fadeInLeft
+  animation-delay: 0.3s
+
+.fullscreen .owl-nav .owl-prev 
+  position: absolute
+  left: 15px
+  top: 43%
+  opacity: 0
+  -webkit-transition: all 0.4s ease-out
+  transition: all 0.4s ease-out
+  background: rgba(0, 0, 0, 0.5) !important
+  width: 60px
+  cursor: pointer
+  height: 60px
+  position: absolute
+  display: block
+  z-index: 1000
+  border-radius: 0
+
+.fullscreen .owl-nav .owl-prev span 
+  line-height: 45px
+  font-size: 3.6875rem
+  color: #fff
+
+.fullscreen .owl-nav .owl-prev:focus 
+  outline: 0
+
+.fullscreen .owl-nav .owl-prev:hover 
+  background: #000 !important
+
+.fullscreen .owl-nav .owl-next 
+  position: absolute
+  right: 15px
+  top: 43%
+  opacity: 0
+  -webkit-transition: all 0.4s ease-out
+  transition: all 0.4s ease-out
+  background: rgba(0, 0, 0, 0.5) !important
+  width: 60px
+  cursor: pointer
+  height: 60px
+  position: absolute
+  display: block
+  z-index: 1000
+  border-radius: 0
+
+.fullscreen .owl-nav .owl-next span 
+  line-height: 45px
+  font-size: 3.6875rem
+  color: #fff
+
+.fullscreen .owl-nav .owl-next:focus 
+  outline: 0
+
+.fullscreen .owl-nav .owl-next:hover 
+  background: #000 !important
+
+.fullscreen:hover .owl-prev 
+  left: 0px
+  opacity: 1
+
+.fullscreen:hover .owl-next 
+  right: 0px
+  opacity: 1
+
+
+.fullscreen__card
+  position: relative
+  &-item
+    width: 90%
+    height: 300px
+    background-color: #FFF
+    border: 1px solid rgba(0, 0, 0, 0.06)
+    position: absolute
+    top: -150px
+    left: 0
+    z-index: 100
+    text-align: center
+    padding: 20px 20px 20px 20px
+    transition: ease background-color 300ms
+    &:hover
+      background-color: #3179ff
+    &:hover h3
+      color: #fff
+    &:hover p
+      color: #fff
+    h3
+      font-size: 20px
+      font-weight: 600
+      padding: 10px 0      
+    p
+      color: #777
+      font-size: 14px
+    .fullscreen-form-row
+      padding: 0 200px
+    .form-group
+      display: flex
+      justify-content: center
+      align-items: center
+      input
+        // width: 50%
+        height: 50px
 

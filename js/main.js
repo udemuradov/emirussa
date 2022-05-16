@@ -1,56 +1,6 @@
 //contact form
 
-const contactForm = document.querySelector('.contact-form');
-let name = document.getElementById('name');
-let email = document.getElementById('email');
-let tel = document.getElementById('tel');
-let message = document.getElementById('message');
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  let formData = {
-    name: name.value,
-    email: email.value,
-    tel: tel.value,
-    message: message.value
-  }
-  let xhr = new XMLHttpRequest();
-  xhr.open('POST', '/');
-  xhr.setRequestHeader('content-type', 'application/json');
-  xhr.onload = function(){
-    console.log(xhr.responseText);
-    if(xhr.responseText == 'success'){
-      alert('Сообщение отправлено');
-      name.value = '';
-      email.value = '';
-      tel.value = '';
-      message.value = '';
-    }
-    else{
-      alert('Проверьте форму отправки')
-    }
-  }
-  xhr.send(JSON.stringify(formData));
-});
 
-  var modal = document.getElementById("myModal");
-  
-  var btn = document.getElementById("myBtn");
-  
-  var span = document.getElementsByClassName("close")[0];
-  
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-  
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
 
 (function ($) {
   "use strict";
@@ -84,8 +34,20 @@ contactForm.addEventListener('submit', (e) => {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
+      $('.header-container').css('padding', '0 0');
+      $('.logo-black').css('display', 'initial');
+      $('.logo-white').css('display', 'none');
+      $('.main-nav a').css('color', '#000');
+      $('.ico-worldwhite').css('display', 'none');
+      $('.ico-world').css('display', 'initial');
     } else {
       $('#header').removeClass('header-scrolled');
+      $('.header-container').css('padding', '10px 0');
+      $('.logo-black').css('display', 'none');
+      $('.logo-white').css('display', 'initial');
+      $('.main-nav a').css('color', '#FFF');
+      $('.ico-worldwhite').css('display', 'initial');
+      $('.ico-world').css('display', 'none');
     }
   });
 
@@ -146,117 +108,21 @@ contactForm.addEventListener('submit', (e) => {
     });
   });
   
-//     $(document).ready(function(){       
-//     var scroll_pos = 0;
-//     $(document).scroll(function() { 
-//         scroll_pos = $(this).scrollTop();
-//         if(scroll_pos > 210) {
-//             $('.main-nav_link').css('color', '#000');
-//         } else {
-//             $('.hvr-reveal').css('color', '#fff');
-//         }
-//     });
-// });
-
-//     $(document).ready(function(){       
-//     var scroll_pos = 0;
-//     $(document).scroll(function() { 
-//         scroll_pos = $(this).scrollTop();
-//         if(scroll_pos > 100) {
-//             $('.main-nav *').css('display', 'block');
-//         } else {
-//             $('.main-nav *').css('display', 'none');
-//         }
-//     });
-// });
-
-  // // jQuery counterUp (used in Whu Us section)
-  // $('[data-toggle="counter-up"]').counterUp({
-  //   delay: 10,
-  //   time: 1000
-  // });
-
-  // // Porfolio isotope and filter
-  // $(window).on('load', function () {
-  //   var portfolioIsotope = $('.portfolio-container').isotope({
-  //     itemSelector: '.portfolio-item'
-  //   });
-  //   $('#portfolio-flters li').on( 'click', function() {
-  //     $("#portfolio-flters li").removeClass('filter-active');
-  //     $(this).addClass('filter-active');
-  
-  //     portfolioIsotope.isotope({ filter: $(this).data('filter') });
-  //   });
-  // });
-
-  // // Testimonials carousel (uses the Owl Carousel library)
-  // $(".testimonials-carousel").owlCarousel({
-  //   autoplay: true,
-  //   dots: true,
-  //   loop: true,
-  //   items: 1
-  // });
-
-  // Clients carousel (uses the Owl Carousel library)
-//   $(".owl-carousel").owlCarousel({
-//     loop: true,
-//     autoplay: true,
-//     responsive: {
-//       0: {
-//         items: 1,
-//       },
-//       600: {
-//         items: 1,
-//       },
-//       1000: {
-//         items: 1,
-//       },
-//     },
-//   });
-// })(jQuery);
-
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  dots:false,
-  nav:true,
-  mouseDrag:false,
-  autoplay:true,
-  animateOut: 'slideOutUp',
-  responsive:{
-      0:{
-          items:1
+  $(".owl-fullscreen").owlCarousel({
+    loop: true,
+    autoplay: true,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
       },
-      600:{
-          items:1
+      600: {
+        items: 1,
       },
-      1000:{
-          items:1
-      }
-  }
-});
-
-$(function(){
-  $('.translate').click(function(){
-    var lang = $(this).attr('id');
-
-    $('.lang').each(function(index, element){
-      $(this).text(arrLang[lang][$(this).attr('key')]);
-    });
+      1000: {
+        items: 1,
+      },
+    },
   });
-});
-$(function(){
-  $('#en').click(function(){
-    $('#name').attr('placeholder','Name');
-    $('#tel').attr('placeholder','Telephone number');
-    $('#message').attr('placeholder','Message');
-  });
-});
-$(function(){
-  $('#ru').click(function(){
-    $('#name').attr('placeholder','Имя');
-    $('#tel').attr('placeholder','Номер телефона');
-    $('#message').attr('placeholder','Сообщение');
-    
-  });
-});
+})(jQuery);
