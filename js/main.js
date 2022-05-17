@@ -34,18 +34,20 @@
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
-      $('.header-container').css('padding', '0 0');
+      $('.header-container').css('padding', '0 15px');
       $('.logo-black').css('display', 'initial');
       $('.logo-white').css('display', 'none');
       $('.main-nav a').css('color', '#000');
+      $('.active a').css('color', '#00bc50');
       $('.ico-worldwhite').css('display', 'none');
       $('.ico-world').css('display', 'initial');
     } else {
       $('#header').removeClass('header-scrolled');
-      $('.header-container').css('padding', '10px 0');
+      $('.header-container').css('padding', '10px 15px');
       $('.logo-black').css('display', 'none');
       $('.logo-white').css('display', 'initial');
       $('.main-nav a').css('color', '#FFF');
+      $('.active a').css('color', '#00bc50');
       $('.ico-worldwhite').css('display', 'initial');
       $('.ico-world').css('display', 'none');
     }

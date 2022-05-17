@@ -15,11 +15,11 @@
     />
     <link rel="stylesheet" type="text/css" href="css/lib/roboto.css" />
     <link rel="stylesheet" type="text/css" href="css/lib/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/lib/lightbox.min.css">
     <link rel="stylesheet" type="text/css" href="css/lib/lightgallery.min.css" />
     <link rel="stylesheet" type="text/css" href="css/lib/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="css/lib/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/lib/aos.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>Emir Ussa</title>
     <link rel="shortcut icon" href="img/icon.ico">
@@ -39,8 +39,9 @@
           <ul>
             <li class="active"><a class="lang" key="home" href="#fullscreen">Главная</a></li>
             <li><a href="#about" class="lang" key="about">О нас</a></li>
-            <li><a href="#services" class="lang" key="services">Галерея</a></li>
-            <li><a href="#footer" class="lang" key="footer">Контакты</a></li>
+            <li><a href="#counter" class="lang" key="services">Деятельность</a></li>
+            <li><a href="#gallery" class="lang" key="gallery">Галерея</a></li>
+            <li><a href="#contacts" class="lang" key="contacts">Контакты</a></li>
             <li class="sl-nav">
               <ul>
                 <li>
@@ -119,35 +120,6 @@
              </div>
         </div>
     </div>
-    <div class="container">
-      <div class="fullscreen__card">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="fullscreen__card-item">
-              <img style="width: 30%;" src="img/watergreen.png" alt="">
-              <h3>Опреснения воды.</h3>
-              <p>Проектирование и монтаж установок опреснения воды.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="fullscreen__card-item">
-              <img style="width: 30%;" src="img/reagentgreen.png" alt="">
-              <h3>Комплексная обработка оборотной воды</h3>
-              <p>Комплексная обработка оборотной воды промышленных объектов химическими
-                реагентами.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="fullscreen__card-item">
-              <img style="width: 30%;" src="img/buildinggreen.png" alt="">
-              <h3>Строительно-монтажные работы</h3>
-              <p>Строительно-монтажные работы, пуско-наладка оборудования различной
-                сложности.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
     <main class="main">
       <div class="content">
@@ -166,7 +138,7 @@
                 <div class="about__content">
                   <div class="about__title">
                     <p>О нас</p>
-                    <h2>You need space for better living.</h2>
+                    <h2>Мы здесь, чтобы помочь(слоган)</h2>
                     <img src="img/divider.jpg" alt="">
                   </div>
                   <div class="about__text">
@@ -190,13 +162,62 @@
         </div>
         <section id="counter" class="counter">
           <div class="container">
-            <div class="counter__block">
-              <div class="counter__title">
-                <h3>Наша работа в цифрах</h3>
+            <div class="services__block">
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <div class="about__content">
+                    <div class="about__title">
+                      <p>Предлагаемые решения</p>
+                      <h2>Мы здесь, чтобы помочь(слоган)</h2>
+                      <img src="img/divider.jpg" alt="">
+                    </div>
+                    <div class="about__text">
+                      <p>Головной  офисы ИП «Эмир-Усса» находится в ш.Балканабад, также имеются
+                        представительства в ш.Ашгабад, ш.Туркменбаши.
+                        </p>
+                      <p>  У  предприятия имеется своя производственная база, парк автотехники, и склады
+                        для хранения запчастей, материалов и химической продукции в ш.Балканабад и
+                        ш.Туркменбаши. </p>
+                      <p>  Специалисты, работающие в ИП «Эмир Усса», имеют большой опыт и
+                        соответствующее образование и квалификацию для выполнения поставленных
+                        задач. </p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6">
+                      <div class="services__card-item">
+                        <img src="img/watergreen.png" alt="">
+                        <h3>Опреснения воды.</h3>
+                        <p>Проектирование и монтаж установок опреснения воды.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="services__card-item">
+                        <img src="img/reagentgreen.png" alt="">
+                        <h3>Комплексная обработка оборотной воды</h3>
+                        <p>Комплексная обработка оборотной воды промышленных объектов химическими
+                          реагентами.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="services__card-item mt-4">
+                        <img src="img/buildinggreen.png" alt="">
+                        <h3>Строительно-монтажные работы</h3>
+                        <p>Строительно-монтажные работы, пуско-наладка оборудования различной
+                          сложности.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>   
               </div>
+            </div>
+            <div class="counter__block">
               <div class="counter__content">
                 <div class="counter__item">
-                  <span class="counter-number" data-target="3">0</span>
+                  <span class="counter-number" data-target="11">0</span>
                   <h5>какой-то текст</h5>
                 </div>
                 <div class="counter__item">
@@ -220,45 +241,95 @@
               <img src="img/arch-plan-22.jpg" alt="">
             </div>
             <div class="container">
-              <div class="gallery__block">
-              <div class="gallery__content row" id="lightgallery">
-                <a class="gallery__a1 gallery__a col-6" href="img/gallery/1.jpg">
-                  <img class="gallery__img1 gallery__img" src="img/gallery/1.jpg" />
-                </a>    
-                <a class="gallery__a2 gallery__a col-3" href="img/gallery/2.jpg">
-                  <img class="gallery__img2 gallery__img" src="img/gallery/2.jpg" />
-                </a>    
-                <a class="gallery__a3 gallery__a col-3" href="img/gallery/3.jpg">
-                  <img class="gallery__img2 gallery__img" src="img/gallery/3.jpg" />
-                </a>    
-                <a class="gallery__a1 gallery__a col-3" href="img/gallery/4.jpg">
-                  <img class="gallery__img2 gallery__img" src="img/gallery/4.jpg" />
-                </a>    
-                <a class="gallery__a2 gallery__a col-3" href="img/about.jpg">
-                  <img class="gallery__img2 gallery__img" src="img/about.jpg" />
-                </a>       
-                <a class="gallery__a3 gallery__a col-6" href="img/gallery/5.jpg">
-                  <img class="gallery__img1 gallery__img" src="img/gallery/5.jpg" />
-                </a>  
-                <a class="gallery__a1 gallery__a col-6" href="img/gallery/1.jpg">
-                  <img class="gallery__img1 gallery__img" src="img/gallery/1.jpg" />
-                </a>    
-                <a class="gallery__a2 gallery__a col-3" href="img/gallery/2.jpg">
-                  <img class="gallery__img2 gallery__img" src="img/gallery/2.jpg" />
-                </a>    
-                <a class="gallery__a3 gallery__a col-3" href="img/gallery/3.jpg">
-                  <img class="gallery__img2 gallery__img" src="img/gallery/3.jpg" />
-                </a>    
-                <a class="gallery__a1 gallery__a col-3" href="img/gallery/4.jpg">
-                  <img class="gallery__img2 gallery__img" src="img/gallery/4.jpg" />
-                </a>    
-                <a class="gallery__a2 gallery__a col-3" href="img/about.jpg">
-                  <img class="gallery__img2 gallery__img" src="img/about.jpg" />
-                </a>       
-                <a class="gallery__a3 gallery__a col-6" href="img/gallery/5.jpg">
-                  <img class="gallery__img1 gallery__img" src="img/gallery/5.jpg" />
-                </a>     
+              <div class="row align-items-center justify-content-start">
+                <div class="col-md-8">
+                  <div class="owl-license owl-carousel owl-theme">
+                    <div class="item">
+                        <a class="license__a" data-lightbox="gallery" href="img/license/1.jpg">
+                          <img class="" src="img/license/1.jpg" />
+                        </a>  
+                    </div>
+                    <div class="item">
+                      <a class="license__a" data-lightbox="gallery" href="img/license/2.jpg">
+                        <img class="" src="img/license/2.jpg" />
+                      </a>  
+                    </div>
+                    <div class="item">
+                      <a class="license__a" data-lightbox="gallery" href="img/license/3.jpg">
+                        <img class="" src="img/license/3.jpg" />
+                      </a>  
+                    </div>
+                    <div class="item">
+                      <a class="license__a" data-lightbox="gallery" href="img/license/4.jpg">
+                        <img class="" src="img/license/4.jpg" />
+                      </a>  
+                    </div>
+                    <div class="item">
+                      <a class="license__a" data-lightbox="gallery" href="img/license/5.jpg">
+                        <img class="" src="img/license/5.jpg" />
+                      </a>  
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="about__content">
+                    <div class="about__title">
+                      <p>Галерея</p>
+                      <h2>Мы здесь, чтобы помочь(слоган)</h2>
+                      <img src="img/divider.jpg" alt="">
+                    </div>
+                    <div class="about__text">
+                      <p>
+                        Предприятие, в соответствии с Законодательством Туркменистана, имеет
+                        лицензии на право выполнения строительных и проектных работ (код 41.20, 42.20,
+                        42.91, 42.99, 43.1, 43.12, 43.22, 43.29, 43.31, 43.33, 43.34, 43.91, 43.99, 71.11, 71.12),
+                        работ по наладке и пуску специализированного оборудования и котлонадзору (код
+                        42.3, 42.4), торговлю химической продукцией (код 46.75), перевозку специальных
+                        грузов (49.41), электротехнических и проектных работ(42.22.10, 43.21.50, 71.11.40) 
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="gallery__block">
+                <div class="gallery__content row" id="gallery-gallery">
+                  <a class="gallery__a1 gallery__a col-6" href="img/gallery/1.jpg">
+                    <img class="gallery__img1 gallery__img" src="img/gallery/1.jpg" />
+                  </a>    
+                  <a class="gallery__a2 gallery__a col-3" href="img/gallery/2.jpg">
+                    <img class="gallery__img2 gallery__img" src="img/gallery/2.jpg" />
+                  </a>    
+                  <a class="gallery__a3 gallery__a col-3" href="img/gallery/3.jpg">
+                    <img class="gallery__img2 gallery__img" src="img/gallery/3.jpg" />
+                  </a>    
+                  <a class="gallery__a1 gallery__a col-3" href="img/gallery/4.jpg">
+                    <img class="gallery__img2 gallery__img" src="img/gallery/4.jpg" />
+                  </a>    
+                  <a class="gallery__a2 gallery__a col-3" href="img/about.jpg">
+                    <img class="gallery__img2 gallery__img" src="img/about.jpg" />
+                  </a>       
+                  <a class="gallery__a3 gallery__a col-6" href="img/gallery/5.jpg">
+                    <img class="gallery__img1 gallery__img" src="img/gallery/5.jpg" />
+                  </a>  
+                  <a class="gallery__a1 gallery__a col-6" href="img/gallery/1.jpg">
+                    <img class="gallery__img1 gallery__img" src="img/gallery/1.jpg" />
+                  </a>    
+                  <a class="gallery__a2 gallery__a col-3" href="img/gallery/2.jpg">
+                    <img class="gallery__img2 gallery__img" src="img/gallery/2.jpg" />
+                  </a>    
+                  <a class="gallery__a3 gallery__a col-3" href="img/gallery/3.jpg">
+                    <img class="gallery__img2 gallery__img" src="img/gallery/3.jpg" />
+                  </a>    
+                  <a class="gallery__a1 gallery__a col-3" href="img/gallery/4.jpg">
+                    <img class="gallery__img2 gallery__img" src="img/gallery/4.jpg" />
+                  </a>    
+                  <a class="gallery__a2 gallery__a col-3" href="img/about.jpg">
+                    <img class="gallery__img2 gallery__img" src="img/about.jpg" />
+                  </a>       
+                  <a class="gallery__a3 gallery__a col-6" href="img/gallery/5.jpg">
+                    <img class="gallery__img1 gallery__img" src="img/gallery/5.jpg" />
+                  </a>     
+                </div>
               </div>
             </div>
           </section>
@@ -297,6 +368,8 @@
                                 <div class="contacts__item">
                                   <h6>Номер телефона</h6>
                                   <a href="tel:80022220608">8-00222-2-06-08</a>
+                                  <h6>E-mail</h6>
+                                  <a href="mailto:info@emirussa.com">info@emirussa.com</a>
                                 </div>
                               </div>
                             </div>
@@ -319,7 +392,10 @@
                                 <div class="contacts__item">
                                   <h6>Номер телефона</h6>
                                   <a href="tel:80012418039">8-0012-41-80-39</a>
+                                  <h6>E-mail</h6>
+                                  <a href="mailto:info@emirussa.com">info@emirussa.com</a>
                                 </div>
+                                
                               </div>
                             </div>
                           </div>
@@ -341,6 +417,8 @@
                                 <div class="contacts__item">
                                   <h6>Номер телефона</h6>
                                   <a href="tel:80024320700">8-00243-2-07-00</a>
+                                  <h6>E-mail</h6>
+                                  <a href="mailto:info@emirussa.com">info@emirussa.com</a>
                                 </div>
                               </div>
                             </div>
@@ -386,8 +464,8 @@
                           </div>
                       </div>
                       <div class="row">
-                          <div class="form-group col mb-0">
-                              <button type="submit" class="" data-loading-text="Loading...">SUBMIT</button>
+                          <div class="form-group col">
+                              <button type="submit" class="" data-loading-text="Loading...">Отправить</button>
                           </div>
                       </div>
                       </form>
@@ -397,8 +475,11 @@
             </div>
           </div>
         </section>
-        <div class="container">
-          <section id="partners" class="partners">
+        <section id="partners" class="partners">
+          <div class="partners__arch">
+            <img src="img/arch-plan-3.png" alt="">
+          </div>
+          <div class="container">
             <div class="partners__block">
               <div class="row">
                 <div class="col-md-12">
@@ -409,18 +490,18 @@
                   </div>
                   <div class="partners__img">
                     <div class="owl-partners owl-carousel owl-theme">
-                      <div class="item"><img src="img/partners/rysgallyussat.png" alt=""></div>
-                      <div class="item"><img src="img/partners/senagatplastik.png" alt=""></div>
-                      <div class="item"><img src="img/partners/nalcowater.png" alt=""></div>
-                      <div class="item"><img src="img/partners/hybirdinnovation.png" alt=""></div>
-                      <div class="item"><img src="img/partners/veolia.png" alt=""></div>
+                      <div class="item"><a href="https://rysgalussat.com/" target="_blank"><img src="img/partners/rysgallyussat.png" alt=""></a></div>
+                      <div class="item"><a href="https://www.senagatplastik.com/" target="_blank"><img src="img/partners/senagatplastik.png" alt=""></a></div>
+                      <div class="item"><a href="https://www.ecolab.com/nalco-water" target="_blank"><img src="img/partners/nalcowater.png" alt=""></a></div>
+                      <div class="item"><a href="https://hybrid-innovation.org/" target="_blank"><img src="img/partners/hybirdinnovation.png" alt=""></a></div>
+                      <div class="item"><a href="https://veoliawatertechnologies.com/" target="_blank"><img src="img/partners/veolia.png" alt=""></a></div>
                   </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
       <footer id="footer" class="footer">
         <div class="container">
@@ -455,6 +536,7 @@
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/lightbox.min.js"></script>
     <script src="js/lib/lightgallery.min.js"></script>
     <script src="js/lib/mobile-nav.js"></script>
     <script src="js/lib/wow.min.js"></script>
@@ -483,38 +565,26 @@
     }
 })
     </script>
-    <script>
-AOS.init();
-
-const truck = new Vivus(
-  'truck',
-  {
-    type: 'sync',
-    duration: 200,
-  },
-);
- const train = new Vivus(
-  'train',
-  {
-    type: 'sync',
-    duration: 200,
-  },
-);
-  const cruis = new Vivus(
-  'cruis',
-  {
-    type: 'sync',
-    duration: 200,
-  },
-);
-const airplane = new Vivus(
-  'airplane',
-  {
-    type: 'sync',
-    duration: 200,
-  },
-);
-    </script>
+      <script>
+      $('.owl-license').owlCarousel({
+      // loop:true,
+      margin:10,
+      nav:false,
+      autoplay: true,
+      dots: true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:3
+          }
+      }
+  })
+      </script>
   
 <script>
   const time = 1028;
@@ -540,7 +610,11 @@ for (let i of document.querySelectorAll(".counter-number")){
 }
 </script>
 <script>
-  var imagPop = document.getElementById("lightgallery");
+  var imagPop = document.getElementById("gallery-gallery");
+  lightGallery(imagPop);
+</script>
+<script>
+    var imagPop = document.getElementById("license-gallery");
   lightGallery(imagPop);
 </script>
   </body>

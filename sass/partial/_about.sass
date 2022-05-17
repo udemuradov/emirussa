@@ -6,7 +6,7 @@
         right: 0
 .about
     position: relative
-    margin-top: 250px
+    margin-top: 80px
     &__img
     &__content
     &__title
@@ -17,6 +17,7 @@
             font-weight: 300
             letter-spacing: 2px
         h2
+            color: #2d2e2b
             font-weight: 900
             font-size: 2.5em
         img
@@ -26,25 +27,9 @@
         margin-top: 10px
         p
             color: #444
-.counter
-    margin: 50px 0
-    background-color: #f7f7f7
-    &__block
-        padding: 30px 50px
-    &__title
-        text-align: center
-    &__content
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        margin-top: 20px
-    &__item
-        display: flex
-        flex-direction: column
-        span
-            color: #00bc50
-            font-size: 80px
-            font-weight: 900
+            line-height: 30px
+            font-size: 18px
+
 .gallery
     &__arch
         position: relative
@@ -54,6 +39,7 @@
             left: 0
             z-index: -1
     &__block
+        margin-top: 30px
         z-index: 1
     &__content
         width: 100%
@@ -114,9 +100,44 @@
             width: 100%
             opacity: 0
             z-index: 3
-    &__img
-    
-    
+    .license__a
+        &:hover::before
+            opacity: 1
+        &:hover::after
+            top: 50%
+            opacity: 1
+        &::before
+            transition: all 0.2s
+            background: rgba(0, 0, 0, 0.65)
+            content: ""
+            display: block
+            position: absolute
+            width: 100%
+            height: 100%
+            left: 0
+            top: 0
+            bottom: 0
+            right: 0
+            opacity: 0
+            z-index: 2
+        &::after
+            transition: all 0.2s
+            font-family: 'FontAwesome'
+            font-weight: 900
+            color: #FFF
+            content: "\f06e"
+            font-size: 40px
+            height: 30px
+            position: absolute
+            top: 30%
+            margin-top: -15px
+            display: block
+            text-align: center
+            width: 100%
+            opacity: 0
+            z-index: 3
+        img
+            width: 100%
     
 .contacts
     background-color: #f7f7f7
@@ -135,14 +156,14 @@
     &__address
     &__info
         h3
-            color: #212529
+            color: #2d2e2b
             font-size: 18px
             font-weight: 900
     &__item
         margin-top: 5px
         margin-bottom: 15px
         h6
-            color: #212529
+            color: #2d2e2b
             font-size: 16px
             font-weight: 500
         p
@@ -158,6 +179,7 @@
     &__form
         &-title
             h3
+                color: #2d2e2b
                 font-weight: 900
                 font-size: 2.5em
         form
@@ -188,7 +210,17 @@
                 textarea
                     height: 200px    
                     resize: none
-        button
+            button
+                border: none
+                background-color: #00bc50
+                color: #fff
+                font-weight: 600
+                letter-spacing: 2px
+                padding: 10px 40px
+                &:hover
+                    background-color: #007432
+                    transition: ease background-color 300ms
+                    
     &__
     &__
     &__
@@ -203,6 +235,13 @@
     
 .partners
     margin-bottom: 50px
+    &__arch
+        position: relative
+        img
+            position: absolute
+            top: 25px
+            right: 0
+            z-index: -1
     &__block
         .owl-partners
             height: 100%
@@ -218,3 +257,35 @@
             color: #222
             margin-bottom: 20px
             // font-size: 
+// .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot
+//     width: 30px
+//     height: 30px
+//     background: #333
+//     color: #333
+//     // border: 10px solid #333
+//     margin-right: 20px
+//     border-radius: 50%
+// .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel .active
+//     background: #00bc50
+
+.owl-dots 
+    text-align: center
+    padding-top: 15px
+    span 
+        font-size: 70px
+        position: relative
+        top: -5px
+
+.owl-dots button.owl-dot 
+  width: 15px
+  height: 15px
+  border-radius: 50%
+  display: inline-block
+  background: #ccc
+  margin: 0 3px
+
+.owl-dots button.owl-dot.active 
+  background-color: #007432
+
+.owl-dots button.owl-dot:focus 
+  outline: none
