@@ -39,7 +39,7 @@
           <ul>
             <li class="active"><a class="lang" key="home" href="#fullscreen">Главная</a></li>
             <li><a href="#about" class="lang" key="about">О нас</a></li>
-            <li><a href="#counter" class="lang" key="services">Деятельность</a></li>
+            <li><a href="#services" class="lang" key="services">Деятельность</a></li>
             <li><a href="#gallery" class="lang" key="gallery">Галерея</a></li>
             <li><a href="#contacts" class="lang" key="contacts">Контакты</a></li>
             <li class="sl-nav">
@@ -128,6 +128,38 @@
         </div>
         <div class="container">
           <section id="about" class="about">
+            <div class="counter__block">
+              <div class="counter__content">
+                <div class="counter__item">
+                  <div class="counter__item-number">
+                    <span class="counter-number" data-target="94406">0</span>
+                    <p>м2</p>
+                  </div>  
+                  <h5>Общая площадь построенных объектов</h5>
+                </div>
+                <div class="counter__item">
+                  <div class="counter__item-number">
+                    <span class="counter-number" data-target="19246">0</span>
+                    <p>м2</p>
+                  </div>  
+                  <h5>Площадь построенных зданий и сооружений</h5>
+                </div>
+                <div class="counter__item">
+                  <div class="counter__item-number">
+                    <span class="counter-number" data-target="32760">0</span>
+                    <p>м2</p>
+                  </div>  
+                  <h5>Площадь выполненного асфальтобетонного покрытия</h5>
+                </div>
+                <div class="counter__item">
+                  <div class="counter__item-number">
+                    <span class="counter-number" data-target="94406">0</span>
+                    <p>метров</p>
+                  </div>  
+                  <h5>Протяженность построенных дорог</h5>
+                </div>
+              </div>
+            </div>
             <div class="row">
               <div class="col-12 col-md-6">
                 <div class="about__img">
@@ -138,7 +170,7 @@
                 <div class="about__content">
                   <div class="about__title">
                     <p>О нас</p>
-                    <h2>Мы здесь, чтобы помочь(слоган)</h2>
+                    <h2>Мы строим наше будущее</h2>
                     <img src="img/divider.jpg" alt="">
                   </div>
                   <div class="about__text">
@@ -160,7 +192,7 @@
             </div>
           </section>
         </div>
-        <section id="counter" class="counter">
+        <section id="services" class="services">
           <div class="container">
             <div class="services__block">
               <div class="row align-items-center">
@@ -168,7 +200,7 @@
                   <div class="about__content">
                     <div class="about__title">
                       <p>Предлагаемые решения</p>
-                      <h2>Мы здесь, чтобы помочь(слоган)</h2>
+                      <h2>Мы строим наше будущее</h2>
                       <img src="img/divider.jpg" alt="">
                     </div>
                     <div class="about__text">
@@ -214,26 +246,6 @@
                 </div>   
               </div>
             </div>
-            <div class="counter__block">
-              <div class="counter__content">
-                <div class="counter__item">
-                  <span class="counter-number" data-target="11">0</span>
-                  <h5>какой-то текст</h5>
-                </div>
-                <div class="counter__item">
-                  <span class="counter-number" data-target="34">0</span>
-                  <h5>какой-то текст</h5>
-                </div>
-                <div class="counter__item">
-                  <span class="counter-number" data-target="760000">0</span>
-                  <h5>какой-то текст</h5>
-                </div>
-                <div class="counter__item">
-                  <span class="counter-number" data-target="3">0</span>
-                  <h5>какой-то текст</h5>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
           <section id="gallery" class="gallery">
@@ -275,7 +287,7 @@
                   <div class="about__content">
                     <div class="about__title">
                       <p>Галерея</p>
-                      <h2>Мы здесь, чтобы помочь(слоган)</h2>
+                      <h2>Мы строим наше будущее</h2>
                       <img src="img/divider.jpg" alt="">
                     </div>
                     <div class="about__text">
@@ -517,9 +529,9 @@
                 <div class="col-md-4 footer-col-border">
                   <div class="footer__address">
                     <i class="fa fa-map-marker footer-marker"></i>
-                    <p>Вел. Балкан, г.Балканабад</p>
-                    <p>211-ый квартал, дом №72</p>
-                    <p>ТРЦ «Хазар», Офис №3</p>
+                    <p>Вел. Балкан, г.Балканабад, 211-ый квартал</p>
+                    <p>дом №72, ТРЦ «Хазар», Офис №3</p>
+                    <a href="https://earth.google.com/web/@39.52327494,54.35381549,8.97138704a,91.79378133d,35y,-0h,0t,0r" target="_blank">Наше местоположение на карте</a>
                   </div>
                 </div>
                 <div class="col-md-4 footer-col-border">
@@ -608,18 +620,18 @@ for (let i of document.querySelectorAll(".counter-number")){
       start = +i.innerHTML,
       end = +i.getAttribute('data-target');  
     // end = +i.dataset.max;
-   window.addEventListener("scroll", function onScroll() {
-      if (window.pageYOffset > numberTop - window.innerHeight / 2) {
-      this.removeEventListener("scroll", onScroll);
+   window.addEventListener("DOMContentLoaded", function onScroll() {
+      // if (window.pageYOffset > numberTop - window.innerHeight / 0) {
+      // this.removeEventListener("scroll", onScroll);
       let interval = this.setInterval(function () {
-   start += (end/time);
+         start += (end/time);
          i.innerHTML = Math.floor( start);
          if (start > end) {
-   i.innerHTML = end;
+            i.innerHTML = end;
             clearInterval(interval);
          }
          }, 1);
-      }
+      // }
    });
 }
 </script>
