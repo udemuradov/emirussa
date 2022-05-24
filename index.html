@@ -23,6 +23,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>Emir Ussa</title>
     <link rel="shortcut icon" href="img/icon.ico">
+    <style type="text/css" media="print">
+      * { display: none; }
+    </style>
   </head>
   <body>
     <header id="header">
@@ -48,29 +51,22 @@
                   <a>
                     <img class="ico-worldwhite" src="img/worldwhite.png" alt="worldlogo">
                     <img class="ico-world" src="img/world.png" alt="worldlogo">
-                    Русский
+                    <span class="lang" key="active_lang"> Русский </span>
                   </a>
                   <div class="triangle"></div>
                   <ul>
-                    <li><i class="sl-flag flag-de"><div id="germany"></div></i> <span class="active">Русский</span></li>
-                    <li><i class="sl-flag flag-tm"><div id="turkmen"></div></i> <span>Туркменский</span></li>
-                    <li><i class="sl-flag flag-usa"><div id="germany"></div></i> <span>Английский</span></li>
+                    <li><i class="sl-flag flag-de"><div id="germany"></div></i> <span onclick="changeLang('ru');" key="russian" class="lang">Русский</span></li>
+                    <li><i class="sl-flag flag-tm"><div id="turkmen"></div></i> <span onclick="changeLang('tm');" key="turkmen" class="lang">Туркменский</span></li>
+                    <li><i class="sl-flag flag-usa"><div id="germany"></div></i> <span onclick="changeLang('en');" key="english" class="lang">Английский</span></li>
                   </ul>
                 </li>
               </ul>
             </li>
           </ul>
           <div class="mobile_menu">
-            <div class="social-links">
-              <a href="https://chat.whatsapp.com/CBQePGFJbfdE0I5pbgVjqN" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
-              <a href="https://instagram.com/mermerkenar" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="https://t.me/mermerkenar" class="facebook"><i class=" fa fa-location-arrow"></i></a>
-            </div>
-            <div class="topbar_number-mobile">
-              <a class="topbar_number-mobile-btn" href="tel:+99365555555">Позвонить Нам!</a>
-            </div>
             <div class="topbar_lang">
               <a class="translate" id="ru"> <span> RU</span></a>
+              <a class="translate" id="en"> <span> TM</span></a>
               <a class="translate" id="en"> <span> EN</span></a>
             </div> 
           </div>
@@ -86,9 +82,7 @@
                 <div class="container">
                     <div class="header-content">
                         <div class="line-slide"></div>
-                        <h2>Teimagine Digital Experience with</h2>
-                        <h1>Start-ups and solutions</h1>
-                        <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                        <h1 class="lang" key="fullscreen_centertitle1">Эскизные решения, Проектирование, консультационные услуги</h1>
                     </div>
                 </div>
              </div>
@@ -99,9 +93,7 @@
                 <div class="container">
                     <div class="header-content">
                         <div class="line-slide animated bounceInLeft"></div>
-                        <h2>Reimagine Digital Experience with</h2>
-                        <h1>Intelligent solutions</h1>
-                        <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                        <h1 class="lang" key="fullscreen_centertitle2">Строительно - монтажные, Пуско-наладочные работы</h1>
                     </div>
                 </div>
              </div>
@@ -112,9 +104,7 @@
                 <div class="container">
                     <div class="header-content">
                         <div class="line-slide animated bounceInLeft"></div>
-                        <h2>Peimagine Digital Experience with</h2>
-                        <h1>Intelligent Solutions</h1>
-                        <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                        <h1 class="lang" key="fullscreen_centertitle3">Строительство объектов “под ключ”</h1>
                     </div>
                 </div>
              </div>
@@ -129,63 +119,62 @@
         <div class="container">
           <section id="about" class="about">
             <div class="counter__block">
-              <div class="counter__content">
-                <div class="counter__item">
+              <div class="counter__content row">
+                <div class="counter__item col-12 col-sm-6 col-lg-3">
                   <div class="counter__item-number">
                     <span class="counter-number" data-target="94406">0</span>
-                    <p>м2</p>
+                    <p key="counter-m" class="lang">м2</p>
                   </div>  
-                  <h5>Общая площадь построенных объектов</h5>
+                  <h5 class="lang" key="counter_text1">Общая площадь построенных объектов</h5>
                 </div>
-                <div class="counter__item">
+                <div class="counter__item col-12 col-sm-6 col-lg-3">
                   <div class="counter__item-number">
                     <span class="counter-number" data-target="19246">0</span>
-                    <p>м2</p>
+                    <p key="counter-m" class="lang">м2</p>
                   </div>  
-                  <h5>Площадь построенных зданий и сооружений</h5>
+                  <h5 class="lang" key="counter_text2">Площадь построенных зданий и сооружений</h5>
                 </div>
-                <div class="counter__item">
+                <div class="counter__item col-12 col-sm-6 col-lg-3">
+                  <div class="counter__item-number">
+                    <span class="counter-number" data-target="86644">0</span>
+                    <p key="counter-m" class="lang">м2</p>
+                  </div>  
+                  <h5 class="lang" key="counter_text3">Площадь выполненного асфальтобетонного покрытия</h5>
+                </div>
+                <div class="counter__item col-12 col-sm-6 col-lg-3">
                   <div class="counter__item-number">
                     <span class="counter-number" data-target="32760">0</span>
-                    <p>м2</p>
+                    <p key="counter-metr" class="lang">метров</p>
                   </div>  
-                  <h5>Площадь выполненного асфальтобетонного покрытия</h5>
-                </div>
-                <div class="counter__item">
-                  <div class="counter__item-number">
-                    <span class="counter-number" data-target="94406">0</span>
-                    <p>метров</p>
-                  </div>  
-                  <h5>Протяженность построенных дорог</h5>
+                  <h5 class="lang" key="counter_text4">Протяженность построенных дорог</h5>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-lg-6">
                 <div class="about__img">
                   <img style="width: 100%;" src="img/about.jpg" alt="">
                 </div>
               </div>
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-lg-6">
                 <div class="about__content">
                   <div class="about__title">
-                    <p>О нас</p>
-                    <h2>Мы строим наше будущее</h2>
+                    <p class="lang" key="about">О нас</p>
+                    <h2 class="lang" key="about_title">«Мы строим наше будущее»</h2>
                     <img src="img/divider.jpg" alt="">
                   </div>
                   <div class="about__text">
-                    <p>Предприятие образовано в 2009 году и уже более 12 лет успешно выполняет
+                    <p class="lang" key="about_text1">Предприятие образовано в 2009 году и уже более 12 лет успешно выполняет
                       на территории Туркменистана проекты по комплексному строительству различных
                       объектов бытового и промышленного назначения, включая установки по обработке
                       и опреснению воды. 
                       </p>
-                    <p>В объем предоставляемых нами услуг входит также поставка оборудования и
+                    <p class="lang" key="about_text2">В объем предоставляемых нами услуг входит также поставка оборудования и
                       химических реагентов от ведущих мировых производителей, используемых при
                       выполнении проектов.</p>
-                    <p>Нашими партнерами и Заказчиками являются местные и зарубежные предприятия
+                    <p class="lang" key="about_text3">Нашими партнерами и Заказчиками являются местные и зарубежные предприятия
                         Туркменистана. Целью сотрудничества нашего предприятия является не только одноразовые
                         поставки, а продолжительная техническая поддержка, и обратная связь от клиента</p>
-                    
                   </div>
                 </div>
               </div>
@@ -196,49 +185,49 @@
           <div class="container">
             <div class="services__block">
               <div class="row align-items-center">
-                <div class="col-md-4">
+                <div class="col-12 col-lg-4">
                   <div class="about__content">
                     <div class="about__title">
-                      <p>Предлагаемые решения</p>
-                      <h2>Мы строим наше будущее</h2>
+                      <p class="lang" key="services_toptitle">Предлагаемые решения</p>
+                      <h2 class="lang" key="services_title">«Мы строим наше будущее»</h2>
                       <img src="img/divider.jpg" alt="">
                     </div>
                     <div class="about__text">
-                      <p>Головной  офисы ИП «Эмир-Усса» находится в ш.Балканабад, также имеются
+                      <p class="lang" key="services_text1">Головной  офисы ИП «Эмир-Усса» находится в ш.Балканабад, также имеются
                         представительства в ш.Ашгабад, ш.Туркменбаши.
                         </p>
-                      <p>  У  предприятия имеется своя производственная база, парк автотехники, и склады
+                      <p class="lang" key="services_text2">  У  предприятия имеется своя производственная база, парк автотехники, и склады
                         для хранения запчастей, материалов и химической продукции в ш.Балканабад и
                         ш.Туркменбаши. </p>
-                      <p>  Специалисты, работающие в ИП «Эмир Усса», имеют большой опыт и
+                      <p class="lang" key="services_text3">  Специалисты, работающие в ИП «Эмир Усса», имеют большой опыт и
                         соответствующее образование и квалификацию для выполнения поставленных
                         задач. </p>
                       
                     </div>
                   </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-12 col-lg-8">
                   <div class="row justify-content-center">
                     <div class="col-md-6">
                       <div class="services__card-item">
                         <img src="img/watergreen.png" alt="">
-                        <h3>Опреснения воды.</h3>
-                        <p>Проектирование и монтаж установок опреснения воды.</p>
+                        <h3 class="lang" key="services_cardtitle1">Опреснения воды.</h3>
+                        <p class="lang" key="services_cardtext1">Проектирование и монтаж установок опреснения воды.</p>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="services__card-item">
                         <img src="img/reagentgreen.png" alt="">
-                        <h3>Комплексная обработка оборотной воды</h3>
-                        <p>Комплексная обработка оборотной воды промышленных объектов химическими
+                        <h3 class="lang" key="services_cardtitle2">Комплексная обработка оборотной воды</h3>
+                        <p class="lang" key="services_cardtext2">Комплексная обработка оборотной воды промышленных объектов химическими
                           реагентами.</p>
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <div class="services__card-item mt-4">
+                      <div class="services__card-item services__card-last">
                         <img src="img/buildinggreen.png" alt="">
-                        <h3>Строительно-монтажные работы</h3>
-                        <p>Строительно-монтажные работы, пуско-наладка оборудования различной
+                        <h3 class="lang" key="services_cardtitle3">Строительно-монтажные работы</h3>
+                        <p class="lang" key="services_cardtext3">Строительно-монтажные работы, пуско-наладка оборудования различной
                           сложности.</p>
                       </div>
                     </div>
@@ -254,7 +243,7 @@
             </div>
             <div class="container">
               <div class="row align-items-center justify-content-start">
-                <div class="col-md-8">
+                <div class="col-12 col-lg-8">
                   <div class="owl-license owl-carousel owl-theme">
                     <div class="item">
                         <a class="license__a" data-lightbox="gallery" href="img/license/1.jpg">
@@ -283,15 +272,15 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-lg-4">
                   <div class="about__content">
                     <div class="about__title">
-                      <p>Галерея</p>
-                      <h2>Мы строим наше будущее</h2>
+                      <p class="lang" key="gallery">Галерея</p>
+                      <h2 class="lang" key="gallery_title">«Мы строим наше будущее»</h2>
                       <img src="img/divider.jpg" alt="">
                     </div>
                     <div class="about__text">
-                      <p>
+                      <p class="lang" key="gallery_text">
                         Предприятие, в соответствии с Законодательством Туркменистана, имеет
                         лицензии на право выполнения строительных и проектных работ (код 41.20, 42.20,
                         42.91, 42.99, 43.1, 43.12, 43.22, 43.29, 43.31, 43.33, 43.34, 43.91, 43.99, 71.11, 71.12),
@@ -352,12 +341,12 @@
                 <div class="col-md-6">
                   <div class="contacts__content">
                     <div class="contacts__title about__title">
-                      <p>Контакты</p>
-                      <h2>Мы здесь, чтобы помочь</h2>
+                      <p class="lang" key="contacts">Контакты</p>
+                      <h2 class="lang" key="contacts_title">Мы здесь, чтобы помочь</h2>
                       <img src="img/divider.jpg" alt="">
                     </div>
                     <div class="contacts__text">
-                      <p>Целью сотрудничества нашего предприятия является не только одноразовые
+                      <p class="lang" key="contacts_text">Целью сотрудничества нашего предприятия является не только одноразовые
                         поставки, а продолжительная техническая поддержка, и обратная связь от клиента</p>
                     </div>
                     <div class="contacts__address">
@@ -366,19 +355,19 @@
                           <div class="contacts__info">
                             <div class="row">
                               <div class="col-md-12">
-                                <h3>Головной офис</h3>
+                                <h3 class="lang" key="contacts_loc1">Головной офис</h3>
                               </div>
                               <div class="col-md-6">
                                 <div class="contacts__item">
-                                  <h6>Адрес</h6>
-                                  <p>Вел. Балкан, г.Балканабад</p>
-                                  <p>211-ый квартал, дом №72</p>
-                                  <p>ТРЦ «Хазар», Офис №3</p>
+                                  <h6 class="lang" key="address_title">Адрес</h6>
+                                  <p class="lang" key="address1_text1">Вел. Балкан, г.Балканабад</p>
+                                  <p class="lang" key="address1_text2">211-ый квартал, дом №72</p>
+                                  <p class="lang" key="address1_text3">ТРЦ «Хазар», Офис №3</p>
                                 </div>
                               </div>
                               <div class="col-md-6">
                                 <div class="contacts__item">
-                                  <h6>Номер телефона</h6>
+                                  <h6 class="lang" key="address_number">Номер телефона</h6>
                                   <a href="tel:80022220608">8-00222-2-06-08</a>
                                   <h6>E-mail</h6>
                                   <a href="mailto:info@emirussa.com">info@emirussa.com</a>
@@ -391,18 +380,18 @@
                           <div class="contacts__info">
                             <div class="row">
                               <div class="col-md-12">
-                                <h3>Филиал г.Ашахабад</h3>
+                                <h3 class="lang" key="address_loc2">Филиал г.Ашахабад</h3>
                               </div>
                               <div class="col-md-6">
                                 <div class="contacts__item">
-                                  <h6>Адрес</h6>
-                                  <p>г.Ашгабад, улица Ататюрка</p>
-                                  <p> БЦ «Беркарар» офис № В2</p>
+                                  <h6 class="lang" key="address_title">Адрес</h6>
+                                  <p class="lang" key="address2_text1">г.Ашгабад, улица Ататюрка</p>
+                                  <p class="lang" key="address2_text2"> БЦ «Беркарар» офис № В2</p>
                                 </div>
                               </div>
                               <div class="col-md-6">
                                 <div class="contacts__item">
-                                  <h6>Номер телефона</h6>
+                                  <h6 class="lang" key="address_number">Номер телефона</h6>
                                   <a href="tel:80012418039">8-0012-41-80-39</a>
                                   <h6>E-mail</h6>
                                   <a href="mailto:info@emirussa.com">info@emirussa.com</a>
@@ -416,18 +405,18 @@
                           <div class="contacts__info">
                             <div class="row">
                               <div class="col-md-12">
-                                <h3>Филиал г.Туркменбаши</h3>
+                                <h3 class="lang" key="address_loc3">Филиал г.Туркменбаши</h3>
                               </div>
                               <div class="col-md-6">
                                 <div class="contacts__item">
-                                  <h6>Адрес</h6>
-                                  <p>Вел. Балкан, г.Туркменбаши,</p>
-                                  <p>улица</p>
+                                  <h6 class="lang" key="address_title">Адрес</h6>
+                                  <p  class="lang" key="address3_text1">Вел. Балкан, г.Туркменбаши,</p>
+                                  <p  class="lang" key="address3_text2">улица</p>
                                 </div>
                               </div>
                               <div class="col-md-6">
                                 <div class="contacts__item">
-                                  <h6>Номер телефона</h6>
+                                  <h6 class="lang" key="address_number">Номер телефона</h6>
                                   <a href="tel:80024320700">8-00243-2-07-00</a>
                                   <h6>E-mail</h6>
                                   <a href="mailto:info@emirussa.com">info@emirussa.com</a>
@@ -443,7 +432,7 @@
                 <div class="col-md-6">
                   <div class="contacts__form">
                     <div class="contacts__form-title overflow-hidden mb-4 mt-4">
-                      <h3 class="">Отправить Сообщение</h3>
+                      <h3 class="lang" key="contacts_sendtitle">Связаться с нами</h3>
                     </div>
                     <form class="" action="php/contact-form.php" method="POST">
                       <div class="contact-form-success alert alert-success d-none mt-4">
@@ -499,7 +488,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="partners__title">
-                    <h3>
+                    <h3 class="lang" key="our_partners">
                       Наши партнеры
                     </h3>
                   </div>
@@ -529,9 +518,9 @@
                 <div class="col-md-4 footer-col-border">
                   <div class="footer__address">
                     <i class="fa fa-map-marker footer-marker"></i>
-                    <p>Вел. Балкан, г.Балканабад, 211-ый квартал</p>
-                    <p>дом №72, ТРЦ «Хазар», Офис №3</p>
-                    <a href="https://earth.google.com/web/@39.52327494,54.35381549,8.97138704a,91.79378133d,35y,-0h,0t,0r" target="_blank">Наше местоположение на карте</a>
+                    <p class="lang" key="footer_address1">Вел. Балкан, г.Балканабад, 211-ый квартал</p>
+                    <p class="lang" key="footer_address2">дом №72, ТРЦ «Хазар», Офис №3</p>
+                    <a class="lang" key="footer_addressloc" href="https://earth.google.com/web/@39.52327494,54.35381549,8.97138704a,91.79378133d,35y,-0h,0t,0r" target="_blank">Наше местоположение на карте</a>
                   </div>
                 </div>
                 <div class="col-md-4 footer-col-border">
@@ -554,12 +543,15 @@
             </div>
           </div>
           <div class="footer__bottom">
-            <p>H.K. "EMIR-USSA" © 2022. Ähli hukuklar goralan.</p>
+            <p class="lang" key="footer_privacy">H.K. "EMIR-USSA" © 2022. Ähli hukuklar goralan.</p>
           </div>
         </div>
       </footer>
     </main>
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- <script>
+			function getCookie(e,t=!1){if(!e)return;let n=document.cookie.match(new RegExp("(?:^|; )"+e.replace(/([.$?*|{}()\[\]\\\/+^])/g,"\\$1")+"=([^;]*)"));if(n){let e=decodeURIComponent(n[1]);if(t)try{return JSON.parse(e)}catch(e){}return e}}function setCookie(e,t,n={path:"/"}){if(!e)return;(n=n||{}).expires instanceof Date&&(n.expires=n.expires.toUTCString()),t instanceof Object&&(t=JSON.stringify(t));let o=encodeURIComponent(e)+"="+encodeURIComponent(t);for(let e in n){o+="; "+e;let t=n[e];!0!==t&&(o+="="+t)}document.cookie=o}function deleteCookie(e){setCookie(e,null,{expires:new Date,path:"/"})}
+		</script> -->
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
     <script src="js/lib/lightbox.min.js"></script>
@@ -571,77 +563,5 @@
     <script src="js/lib/aos.js"></script>
     <script src="js/db.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      $('.owl-partners').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    autoplay: true,
-    dots: false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
-    </script>
-      <script>
-      $('.owl-license').owlCarousel({
-      // loop:true,
-      margin:10,
-      nav:false,
-      autoplay: true,
-      dots: true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:1
-          },
-          1000:{
-              items:3
-          }
-      }
-  })
-      </script>
-  
-<script>
-  const time = 1028;
-
-for (let i of document.querySelectorAll(".counter-number")){
-   let numberTop = i.getBoundingClientRect().top,
-      start = +i.innerHTML,
-      end = +i.getAttribute('data-target');  
-    // end = +i.dataset.max;
-   window.addEventListener("DOMContentLoaded", function onScroll() {
-      // if (window.pageYOffset > numberTop - window.innerHeight / 0) {
-      // this.removeEventListener("scroll", onScroll);
-      let interval = this.setInterval(function () {
-         start += (end/time);
-         i.innerHTML = Math.floor( start);
-         if (start > end) {
-            i.innerHTML = end;
-            clearInterval(interval);
-         }
-         }, 1);
-      // }
-   });
-}
-</script>
-<script>
-  var imagPop = document.getElementById("gallery-gallery");
-  lightGallery(imagPop);
-</script>
-<script>
-    var imagPop = document.getElementById("license-gallery");
-  lightGallery(imagPop);
-</script>
   </body>
 </html>
