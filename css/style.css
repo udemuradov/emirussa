@@ -613,7 +613,7 @@
 
 .fullscreen .item .cover-slide .header-content {
   position: relative;
-  padding: 56px;
+  padding: 30px 30px 30px 56px;
   overflow: hidden;
 }
 
@@ -843,10 +843,14 @@
 
 .logo-black {
   display: none;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .logo-white {
   display: initial;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .header-container {
