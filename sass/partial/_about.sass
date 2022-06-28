@@ -69,8 +69,63 @@
             color: #444
             line-height: 30px
             font-size: 18px
+    &__viewmore-btn
+        margin-top: 20px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-decoration: none !important
+        &:hover
+            
+        img
+            width: 10%
+        span
+            font-size: 18px
+            font-weight: 700
+            text-transform: uppercase
+            color: $green
+// .owl-gallery, .owl-nav
+//     top: 25%
+// .owl-license, .owl-nav
+//     top: 0%
+// .gallery-container
+//     position: relative
 
+// .owl-gallery, .owl-license
+//     position: initial
+//     .owl-stage-outer
+//         z-index: 1
+//     .owl-nav
+//         height: 100%
+//         width: 100%
+//         display: flex
+//         justify-content: center
+//         position: absolute
+//         left: 0
+//         z-index: 2
+//         .owl-prev
+//             width: 50%
+//             float: left
+//             display: flex
+//             justify-content: start
+//             align-items: center
+//             margin-left: 10%
+//         .owl-next
+//             width: 50%
+//             float: right
+//             display: flex
+//             align-content: end
+//             align-items: center
+//             justify-content: end
+//             margin-right: 10%
+//         span
+//             font-size: 120px
+//             color: rgba($green, .5 )
+//             &:hover
+//                 color: $green
 .gallery
+    .gallery-image-col
+        position: initial
     &__arch
         position: relative
         img
@@ -78,33 +133,72 @@
             top: -100px
             left: 0
             z-index: -1
-    &__block
-        margin-top: 30px
-        z-index: 1
-    &__content
-        width: 100%
-        img
-            height: 200px
-            object-fit: cover
-    &__img1
-        width: 100%
-        // height: 233px
-        // object-fit: cover
-    &__img2
-        height: 100%
-        object-fit: cover
-        width: 100%
-    &__a1
-        padding-right: 0
-        &::before
-            border-left: 15px solid #fff
-    &__a2
-        padding: 0
-    &__a3
-        padding-left: 0
-        &::before        
-            border-right: 15px solid #fff
+    .gallery-container 
+        position: relative
+        .owl-gallery
+            position: initial
+            .owl-stage-outer
+                z-index: 1
+            .owl-nav
+                width: 100%
+                display: flex
+                justify-content: space-between
+                padding: 0 10%
+                position: absolute
+                left: 0
+                top: 10%
+                z-index: 0
+                .owl-prev
+                    display: flex
+                    // justify-content: space-between
+                    align-items: center
+                    // margin-left: 10%
+                .owl-next
+                    display: flex
+                    align-content: end
+                    align-items: center
+                    justify-content: end
+                    // margin-right: 10%
+                span
+                    font-size: 120px
+                    color: rgba($green, .5 )
+                    &:hover
+                        color: $green
+    .license-container 
+        position: relative
+        .owl-license
+            position: initial
+            .owl-stage-outer
+                z-index: 1
+            .owl-nav
+                display: none
+                width: 100%
+                // display: flex
+                justify-content: space-between
+                padding: 0 10%
+                position: absolute
+                left: 0
+                top: 25%
+                z-index: 0
+                .owl-prev
+                    display: flex
+                    // justify-content: space-between
+                    align-items: center
+                    // margin-left: 10%
+                .owl-next
+                    display: flex
+                    align-content: end
+                    align-items: center
+                    justify-content: end
+                    // margin-right: 10%
+                span
+                    font-size: 120px
+                    color: rgba($green, .5 )
+                    &:hover
+                        color: $green
     &__a
+        img
+            height: 300px
         &:hover::before
             opacity: 1
         &:hover::after

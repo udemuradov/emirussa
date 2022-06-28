@@ -159,18 +159,37 @@ for (let i of document.querySelectorAll(".counter-number")){
   $('.owl-license').owlCarousel({
     // loop:true,
     margin:10,
-    nav:false,
+    nav:true,
     autoplay: true,
     dots: true,
     responsive:{
         0:{
             items:2
         },
-        600:{
-            items:4
+        700:{
+          items:3
         },
         1000:{
+            items:5
+        }
+    }
+  })
+
+  $('.owl-gallery').owlCarousel({
+    // loop:true,
+    margin:10,
+    nav:true,
+    autoplay: true,
+    dots: true,
+    responsive:{
+        0:{
+            items:2
+        },
+        700:{
             items:3
+        },
+        1000:{
+            items:5
         }
     }
   })
@@ -225,11 +244,10 @@ function changeLang(lang){
           let attr = el.getAttribute('key');
           el.innerHTML = arrLang[lang][attr];
       }); 
-      document.getElementById("activelang").innerHTML = lang;
+      // document.getElementById("activelang").innerHTML = lang;
 
 
       let loc = window.location.pathname;
-      console.log(loc)
       var formName = document.getElementById ("formname");
       var formPhone = document.getElementById ("formphone");
       var formSubject = document.getElementById ("formsubject");
@@ -237,109 +255,40 @@ function changeLang(lang){
       var formMsg = document.getElementById ("formmsg");
       var catalogLinkBg = document.getElementById ("cataloglinkbg");
       var catalogLinkDaz = document.getElementById ("cataloglinkdaz");
+      var blackLogo = document.getElementById ("blacklogo");
+      var whiteLogo = document.getElementById ("whitelogo");
+      var aboutViewMore = document.getElementById ("aboutviewmorebtn");
       if (loc == '/' || loc == '/index.html'){
+        if (lang == 'ru'){
+            // formName.placeholder = 'Ваше имя';
+            // formPhone.placeholder = 'Ваш номер телефона';
+            // formName.setAttribute('data-msg-required', 'Пожалуйста введите свое имя');
+            // formPhone.setAttribute('data-msg-required', 'Пожалуйста введите свой номер телефона');
+            // catalogLinkBg.setAttribute('href', 'docs/bgcatalogru.pdf');
+            blackLogo.setAttribute('src', 'img/logotextblack.png');
+            whiteLogo.setAttribute('src', 'img/logotextwhite.png');
+            aboutViewMore.setAttribute('href', 'documents/docru.pdf')
+        }
           if (lang == 'tm'){
-              formName.placeholder = 'Adyňyz';
-              formPhone.placeholder = 'Telefon belgiňiz';
-              formName.setAttribute('data-msg-required',  'Adyňyzy ýazmagyňyzy haýyş edýäris');
-              formPhone.setAttribute('data-msg-required', 'Telefon belgiňizi ýazmagyňyzy haýyş edýäris');
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogtm.pdf');
-          }
-          if (lang == 'ru'){
-              formName.placeholder = 'Ваше имя';
-              formPhone.placeholder = 'Ваш номер телефона';
-              formName.setAttribute('data-msg-required', 'Пожалуйста введите свое имя');
-              formPhone.setAttribute('data-msg-required', 'Пожалуйста введите свой номер телефона');
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogru.pdf');
+              // formName.placeholder = 'Adyňyz';
+              // formPhone.placeholder = 'Telefon belgiňiz';
+              // formName.setAttribute('data-msg-required',  'Adyňyzy ýazmagyňyzy haýyş edýäris');
+              // formPhone.setAttribute('data-msg-required', 'Telefon belgiňizi ýazmagyňyzy haýyş edýäris');
+              // catalogLinkBg.setAttribute('href', 'docs/bgcatalogtm.pdf');
+              blackLogo.setAttribute('src', 'img/logotextblacktm.png');
+              whiteLogo.setAttribute('src', 'img/logotextwhitetm.png');
+              aboutViewMore.setAttribute('href', 'documents/docru.pdf')
+              console.log(loc)
           }
           if (lang == 'en'){
-              formName.placeholder = 'Name';
-              formPhone.placeholder = 'Phone number';
-              formName.setAttribute('data-msg-required', 'Please enter your name');
-              formPhone.setAttribute('data-msg-required', 'Please enter your phone');
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogen.pdf');
+              // formName.placeholder = 'Name';
+              // formPhone.placeholder = 'Phone number';
+              // formName.setAttribute('data-msg-required', 'Please enter your name');
+              // formPhone.setAttribute('data-msg-required', 'Please enter your phone');
+              // catalogLinkBg.setAttribute('href', 'docs/bgcatalogen.pdf');
+              blackLogo.setAttribute('src', 'img/logotextblacken.png');
+              whiteLogo.setAttribute('src', 'img/logotextwhiteen.png');
+              aboutViewMore.setAttribute('href', 'documents/docru.pdf')
           }
-      }
-      if (loc == '/contacts.html'){
-          if (lang == 'tm'){
-              formName.placeholder = 'Adyňyz';
-              formPhone.placeholder = 'Telefon belgiňiz';
-              formSubject.placeholder = 'Mowzuk';
-              formMsg.placeholder = 'Habaryňyz';
-              formName.setAttribute('data-msg-required',  'Adyňyzy ýazmagyňyzy haýyş edýäris');
-              formPhone.setAttribute('data-msg-required', 'Telefon belgiňizi ýazmagyňyzy haýyş edýäris');
-              formSubject.setAttribute('data-msg-required') = 'Mowzuk ýazmagyňyzy haýyş edýäris';
-              formEmail.setAttribute('data-msg-required') = 'E-mail ýazmagyňyzy haýyş edýäris';
-              formMsg.setAttribute('data-msg-required') = 'Habaryňyz ýazmagyňyzy haýyş edýäris';
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogtm.pdf');
-              catalogLinkDaz.setAttribute('href', 'docs/dazcatalogtm.pdf');
-          }
-          if (lang == 'ru'){
-              formName.placeholder = 'Ваше имя';
-              formPhone.placeholder = 'Ваш номер телефона';
-              formSubject.placeholder = 'Тема';
-              formMsg.placeholder = 'Ваше сообщение';
-              formName.setAttribute('data-msg-required', 'Пожалуйста введите свое имя');
-              formPhone.setAttribute('data-msg-required', 'Пожалуйста введите свой номер телефона');
-              formSubject.setAttribute('data-msg-required', 'Пожалуйста введите тему');
-              formEmail.setAttribute('data-msg-required', 'Это поле обязательно к заполнению.');
-              formMsg.setAttribute('data-msg-required', 'Пожалуйста введите свое сообщение.');
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogru.pdf');
-              catalogLinkDaz.setAttribute('href', 'docs/dazcatalogenru.pdf');
-          }
-          if (lang == 'en'){
-              formName.placeholder = 'Name';
-              formPhone.placeholder = 'Phone number';
-              formSubject.placeholder = 'Subject';
-              formMsg.placeholder = 'Your message';
-              formName.setAttribute('data-msg-required', 'Please enter your name');
-              formPhone.setAttribute('data-msg-required', 'Please enter your phone');
-              formSubject.setAttribute('data-msg-required', 'Please enter subject.');
-              formEmail.setAttribute('data-msg-required', 'This field is required.');
-              formMsg.setAttribute('data-msg-required', 'Please enter message.');
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogen.pdf');
-              catalogLinkDaz.setAttribute('href', 'docs/dazcatalogenru.pdf');
-              
-          }
-          
-      }
-      if (loc == '/product.html'){
-          if (lang == 'tm'){
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogtm.pdf');
-              catalogLinkDaz.setAttribute('href', 'docs/dazcatalogtm.pdf');
-          }
-          if (lang == 'ru'){
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogru.pdf');
-              catalogLinkDaz.setAttribute('href', 'docs/dazcatalogenru.pdf');
-          }
-          if (lang == 'en'){
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogen.pdf');
-              catalogLinkDaz.setAttribute('href', 'docs/dazcatalogenru.pdf');
-          }
-          
-      }
-      if (loc == '/about.html'){
-          if (lang == 'tm'){
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogtm.pdf');
-          }
-          if (lang == 'ru'){
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogru.pdf');
-          }
-          if (lang == 'en'){
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogen.pdf');
-          }
-          
-      }
-      if (loc == '/gallery.html'){
-          if (lang == 'tm'){
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogtm.pdf');
-          }
-          if (lang == 'ru'){
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogru.pdf');
-          }
-          if (lang == 'en'){
-              catalogLinkBg.setAttribute('href', 'docs/bgcatalogen.pdf');
-          }
-          
       }
 }

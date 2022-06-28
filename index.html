@@ -33,8 +33,8 @@
       <div class="container header-container">
         <div class="logo">
           <a href="#fullscreen" class="scrollto">
-            <img src="img/logotextblack.png" alt="" class="img-fluid logo-black"/>
-            <img src="img/logotextwhite.png" alt="" class="img-fluid logo-white"/>
+            <img src="img/logotextblack.png" id="blacklogo" alt="" class="img-fluid logo-black"/>
+            <img src="img/logotextwhite.png" id="whitelogo" alt="" class="img-fluid logo-white"/>
           </a>
         </div>
 
@@ -180,6 +180,10 @@
                     <p class="lang" key="about_text3">Нашими партнерами и Заказчиками являются местные и зарубежные предприятия
                         Туркменистана. Целью сотрудничества нашего предприятия является не только одноразовые
                         поставки, а продолжительная техническая поддержка, и обратная связь от клиента</p>
+                    <a target="_blank" class="about__viewmore-btn" id="aboutviewmorebtn" href="documents/docru.pdf">
+                      <img src="img/view.png" alt="">
+                      <span class="lang" key="view_morebtn">Узнать больше</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -198,42 +202,57 @@
                       <img src="img/divider.jpg" alt="">
                     </div>
                     <div class="about__text">
-                      <p class="lang" key="services_text1">Головной  офисы ИП «Эмир-Усса» находится в г.Балканабад, также имеются
-                        представительства в г.Ашгабад, г.Туркменбаши.
-                        </p>
-                      <p class="lang" key="services_text2">  У  предприятия имеется своя производственная база, парк автотехники, и склады
-                        для хранения запчастей, материалов и химической продукции в г.Балканабад и
-                        г.Туркменбаши. </p>
-                      <p class="lang" key="services_text3">  Специалисты, работающие в ИП «Эмир Усса», имеют большой опыт и
-                        соответствующее образование и квалификацию для выполнения поставленных
-                        задач. </p>
+                      <p class="lang" key="gallery_text">
+                        Предприятие, в соответствии с Законодательством Туркменистана, имеет
+                        лицензии на право выполнения строительных и проектных работ (код 41.20, 42.20,
+                        42.91, 42.99, 43.1, 43.12, 43.22, 43.29, 43.31, 43.33, 43.34, 43.91, 43.99, 71.11, 71.12),
+                        работ по наладке и пуску специализированного оборудования и котлонадзору (код
+                        42.3, 42.4), торговлю химической продукцией (код 46.75), перевозку специальных
+                        грузов (49.41), электротехнических и проектных работ(42.22.10, 43.21.50, 71.11.40) 
+                      </p>
                       
                     </div>
                   </div>
                 </div>
                 <div class="col-12 col-lg-8">
                   <div class="row justify-content-center">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                       <div class="services__card-item">
                         <img src="img/watergreen.png" alt="">
-                        <h3 class="lang" key="services_cardtitle1">Опреснения воды.</h3>
-                        <p class="lang" key="services_cardtext1">Проектирование и монтаж установок опреснения воды.</p>
+                        <!-- < class="lang" key="services_cardtitle1">Опреснения воды.</> -->
+                        <h3 class="lang" key="services_cardtext1">Проектирование и монтаж установок опреснения воды.</h3>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="services__card-item">
+                        <img src="img/reagentgreen.png" alt="">
+                        <!-- < class="lang" key="services_cardtitle2">Комплексная обработка оборотной воды</> -->
+                        <h3 class="lang" key="services_cardtext2">Комплексная обработка оборотной воды промышленных объектов химическими
+                          реагентами.</h3>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="services__card-item">
+                        <img src="img/buildinggreen.png" alt="">
+                        <!-- <h3 class="lang" key="services_cardtitle3">Строительно-монтажные работы</h3> -->
+                        <h3 class="lang" key="services_cardtext3">Строительно-монтажные работы, пуско-наладка оборудования различной
+                          сложности.</h3>
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <div class="services__card-item">
+                      <div class="services__card-item services__card-last">
                         <img src="img/reagentgreen.png" alt="">
-                        <h3 class="lang" key="services_cardtitle2">Комплексная обработка оборотной воды</h3>
-                        <p class="lang" key="services_cardtext2">Комплексная обработка оборотной воды промышленных объектов химическими
-                          реагентами.</p>
+                        <!-- <h3 class="lang" key="services_cardtitle2">Комплексная обработка оборотной воды</h3> -->
+                        <h3 class="lang" key="services_cardtext4">Консультационные услуги в различных производственных сферах
+                          реагентами.</h3>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="services__card-item services__card-last">
                         <img src="img/buildinggreen.png" alt="">
-                        <h3 class="lang" key="services_cardtitle3">Строительно-монтажные работы</h3>
-                        <p class="lang" key="services_cardtext3">Строительно-монтажные работы, пуско-наладка оборудования различной
-                          сложности.</p>
+                        <!-- <h3 class="lang" key="services_cardtitle3">Строительно-монтажные работы</h3> -->
+                        <h3 class="lang" key="services_cardtext5">Поставка оборудования и химических реагентов от ведущих мировых производителей.
+                          сложности.</h3>
                       </div>
                     </div>
                   </div>
@@ -246,95 +265,108 @@
             <div class="gallery__arch">
               <img src="img/arch-plan-22.jpg" alt="">
             </div>
-            <div class="container">
-              <div class="row align-items-center justify-content-start">
-                <div class="col-12 col-lg-8">
-                  <div class="owl-license owl-carousel owl-theme">
-                    <div class="item">
-                        <a class="license__a" data-lightbox="gallery" href="img/license/1.jpg">
-                          <img class="" src="img/license/1.jpg" />
+            <div class="license-container">
+              <div class="container">
+                <div class="row align-items-center justify-content-start">
+                  <div class="col-12 col-lg-12 gallery-image-col">
+                    <div class="owl-license owl-carousel owl-theme">
+                      <div class="item">
+                          <a class="license__a" data-lightbox="gallery" href="img/license/1.jpg">
+                            <img class="" src="img/license/1.jpg" />
+                          </a>  
+                      </div>
+                      <div class="item">
+                        <a class="license__a" data-lightbox="gallery" href="img/license/2.jpg">
+                          <img class="" src="img/license/2.jpg" />
                         </a>  
-                    </div>
-                    <div class="item">
-                      <a class="license__a" data-lightbox="gallery" href="img/license/2.jpg">
-                        <img class="" src="img/license/2.jpg" />
-                      </a>  
-                    </div>
-                    <div class="item">
-                      <a class="license__a" data-lightbox="gallery" href="img/license/3.jpg">
-                        <img class="" src="img/license/3.jpg" />
-                      </a>  
-                    </div>
-                    <div class="item">
-                      <a class="license__a" data-lightbox="gallery" href="img/license/4.jpg">
-                        <img class="" src="img/license/4.jpg" />
-                      </a>  
-                    </div>
-                    <div class="item">
-                      <a class="license__a" data-lightbox="gallery" href="img/license/5.jpg">
-                        <img class="" src="img/license/5.jpg" />
-                      </a>  
-                    </div>
-                </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="about__content">
-                    <div class="about__title">
-                      <p class="lang" key="gallery">Галерея</p>
-                      <h2 class="lang" key="gallery_title">«Мы строим наше будущее»</h2>
-                      <img src="img/divider.jpg" alt="">
-                    </div>
-                    <div class="about__text">
-                      <p class="lang" key="gallery_text">
-                        Предприятие, в соответствии с Законодательством Туркменистана, имеет
-                        лицензии на право выполнения строительных и проектных работ (код 41.20, 42.20,
-                        42.91, 42.99, 43.1, 43.12, 43.22, 43.29, 43.31, 43.33, 43.34, 43.91, 43.99, 71.11, 71.12),
-                        работ по наладке и пуску специализированного оборудования и котлонадзору (код
-                        42.3, 42.4), торговлю химической продукцией (код 46.75), перевозку специальных
-                        грузов (49.41), электротехнических и проектных работ(42.22.10, 43.21.50, 71.11.40) 
-                      </p>
-                    </div>
+                      </div>
+                      <div class="item">
+                        <a class="license__a" data-lightbox="gallery" href="img/license/3.jpg">
+                          <img class="" src="img/license/3.jpg" />
+                        </a>  
+                      </div>
+                      <div class="item">
+                        <a class="license__a" data-lightbox="gallery" href="img/license/4.jpg">
+                          <img class="" src="img/license/4.jpg" />
+                        </a>  
+                      </div>
+                      <div class="item">
+                        <a class="license__a" data-lightbox="gallery" href="img/license/5.jpg">
+                          <img class="" src="img/license/5.jpg" />
+                        </a>  
+                      </div>
+                  </div>
                   </div>
                 </div>
               </div>
-              <div class="gallery__block">
-                <div class="gallery__content row" id="gallery-gallery">
-                  <a class="gallery__a1 gallery__a col-6" href="img/gallery/1.jpg">
-                    <img class="gallery__img1 gallery__img" src="img/gallery/1.jpg" />
-                  </a>    
-                  <a class="gallery__a2 gallery__a col-3" href="img/gallery/2.jpg">
-                    <img class="gallery__img2 gallery__img" src="img/gallery/2.jpg" />
-                  </a>    
-                  <a class="gallery__a3 gallery__a col-3" href="img/gallery/3.jpg">
-                    <img class="gallery__img2 gallery__img" src="img/gallery/3.jpg" />
-                  </a>    
-                  <a class="gallery__a1 gallery__a col-3" href="img/gallery/4.jpg">
-                    <img class="gallery__img2 gallery__img" src="img/gallery/4.jpg" />
-                  </a>    
-                  <a class="gallery__a2 gallery__a col-3" href="img/gallery/5.jpg">
-                    <img class="gallery__img2 gallery__img" src="img/gallery/5.jpg" />
-                  </a>       
-                  <a class="gallery__a3 gallery__a col-6" href="img/gallery/6.jpg">
-                    <img class="gallery__img1 gallery__img" src="img/gallery/6.jpg" />
-                  </a>  
-                  <a class="gallery__a1 gallery__a col-6" href="img/gallery/7.jpg">
-                    <img class="gallery__img1 gallery__img" src="img/gallery/7.jpg" />
-                  </a>    
-                  <a class="gallery__a2 gallery__a col-3" href="img/gallery/8.jpg">
-                    <img class="gallery__img2 gallery__img" src="img/gallery/8.jpg" />
-                  </a>    
-                  <a class="gallery__a3 gallery__a col-3" href="img/gallery/9.jpg">
-                    <img class="gallery__img2 gallery__img" src="img/gallery/9.jpg" />
-                  </a>    
-                  <a class="gallery__a1 gallery__a col-3" href="img/gallery/10.jpg">
-                    <img class="gallery__img2 gallery__img" src="img/gallery/10.jpg" />
-                  </a>    
-                  <a class="gallery__a2 gallery__a col-3" href="img/gallery/11.jpg">
-                    <img class="gallery__img2 gallery__img" src="img/gallery/11.jpg" />
-                  </a>       
-                  <a class="gallery__a3 gallery__a col-6" href="img/gallery/12.jpg">
-                    <img class="gallery__img1 gallery__img" src="img/gallery/12.jpg" />
-                  </a>     
+            </div>
+            <div class="gallery-container">
+              <div class="container">
+                <div class="row align-items-center justify-content-start mt-5">
+                  <div class="col-12 col-lg-12 gallery-image-col">
+                    <div class="owl-gallery owl-carousel owl-theme">
+                      <div class="item">
+                          <a class="gallery__a" data-lightbox="gallery" href="img/gallery/1.jpg">
+                            <img class="" src="img/gallery/1.jpg" />
+                          </a>  
+                      </div>
+                      <div class="item">
+                        <a class="gallery__a" data-lightbox="gallery" href="img/gallery/2.jpg">
+                          <img class="" src="img/gallery/2.jpg" />
+                        </a> 
+                      </div>
+                      <div class="item">
+                        <a class="gallery__a" data-lightbox="gallery" href="img/gallery/3.jpg">
+                          <img class="" src="img/gallery/3.jpg" />
+                        </a> 
+                      </div>
+                      <div class="item">
+                        <a class="gallery__a" data-lightbox="gallery" href="img/gallery/4.jpg">
+                          <img class="" src="img/gallery/4.jpg" />
+                        </a>  
+                      </div>
+                      <div class="item">
+                        <a class="gallery__a" data-lightbox="gallery" href="img/gallery/5.jpg">
+                          <img class="" src="img/gallery/5.jpg" />
+                        </a> 
+                      </div>
+                      <div class="item">
+                        <a class="gallery__a" data-lightbox="gallery" href="img/gallery/6.jpg">
+                          <img class="" src="img/gallery/6.jpg" />
+                        </a>  
+                    </div>
+                    <div class="item">
+                      <a class="gallery__a" data-lightbox="gallery" href="img/gallery/7.jpg">
+                        <img class="" src="img/gallery/7.jpg" />
+                      </a> 
+                    </div>
+                    <div class="item">
+                      <a class="gallery__a" data-lightbox="gallery" href="img/gallery/8.jpg">
+                        <img class="" src="img/gallery/8.jpg" />
+                      </a> 
+                    </div>
+                    <div class="item">
+                      <a class="gallery__a" data-lightbox="gallery" href="img/gallery/9.jpg">
+                        <img class="" src="img/gallery/9.jpg" />
+                      </a>  
+                    </div>
+                    <div class="item">
+                      <a class="gallery__a" data-lightbox="gallery" href="img/gallery/10.jpg">
+                        <img class="" src="img/gallery/10.jpg" />
+                      </a> 
+                    </div>
+                    <div class="item">
+                      <a class="gallery__a" data-lightbox="gallery" href="img/gallery/11.jpg">
+                        <img class="" src="img/gallery/11.jpg" />
+                      </a> 
+                    </div>
+                    <div class="item">
+                      <a class="gallery__a" data-lightbox="gallery" href="img/gallery/12.jpg">
+                        <img class="" src="img/gallery/12.jpg" />
+                      </a> 
+                    </div>
+                  </div>
+                  </div>
                 </div>
               </div>
             </div>
