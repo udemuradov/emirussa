@@ -228,7 +228,7 @@ var defLang = 'ru';
 let cookLang  = getCookie('lang');
 
 if (cookLang){
-    defLang = cookLang;
+    // defLang = cookLang;
     changeLang(cookLang);
 }else {
     setCookie('lang', defLang);
@@ -236,7 +236,7 @@ if (cookLang){
 function changeLang(lang){
   console.log('defLang: ', defLang)
   console.log('lang: ', lang)
-      defLang = lang;
+      // defLang = lang;
       setCookie('lang', lang);
       let elements = document.querySelectorAll('.lang');
 
@@ -248,17 +248,10 @@ function changeLang(lang){
 
 
       let loc = window.location.pathname;
-      var formName = document.getElementById ("formname");
-      var formPhone = document.getElementById ("formphone");
-      var formSubject = document.getElementById ("formsubject");
-      var formEmail = document.getElementById ("formemail");
-      var formMsg = document.getElementById ("formmsg");
-      var catalogLinkBg = document.getElementById ("cataloglinkbg");
-      var catalogLinkDaz = document.getElementById ("cataloglinkdaz");
       var blackLogo = document.getElementById ("blacklogo");
       var whiteLogo = document.getElementById ("whitelogo");
       var aboutViewMore = document.getElementById ("aboutviewmorebtn");
-      if (loc == '/' || loc == '/index.html'){
+      if (loc == '/' || loc == '/index.html' || loc == '/emirussa/'){
         if (lang == 'ru'){
             // formName.placeholder = 'Ваше имя';
             // formPhone.placeholder = 'Ваш номер телефона';
