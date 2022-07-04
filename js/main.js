@@ -251,34 +251,31 @@ function changeLang(lang){
       var blackLogo = document.getElementById ("blacklogo");
       var whiteLogo = document.getElementById ("whitelogo");
       var aboutViewMore = document.getElementById ("aboutviewmorebtn");
+      var formName = document.getElementById('formname');
+      var formNumber = document.getElementById('formnumber');
+      var formMessage = document.getElementById('formmessage');
       if (loc == '/' || loc == '/index.html' || loc == '/emirussa/'){
         if (lang == 'ru'){
-            // formName.placeholder = 'Ваше имя';
-            // formPhone.placeholder = 'Ваш номер телефона';
-            // formName.setAttribute('data-msg-required', 'Пожалуйста введите свое имя');
-            // formPhone.setAttribute('data-msg-required', 'Пожалуйста введите свой номер телефона');
-            // catalogLinkBg.setAttribute('href', 'docs/bgcatalogru.pdf');
+            formName.placeholder = 'Имя *';
+            formNumber.placeholder = 'Телефон номер *';
+            formMessage.placeholder = 'Сообщение *';
             blackLogo.setAttribute('src', 'img/logotextblack.png');
             whiteLogo.setAttribute('src', 'img/logotextwhite.png');
             aboutViewMore.setAttribute('href', 'documents/docru.pdf')
         }
           if (lang == 'tm'){
-              // formName.placeholder = 'Adyňyz';
-              // formPhone.placeholder = 'Telefon belgiňiz';
-              // formName.setAttribute('data-msg-required',  'Adyňyzy ýazmagyňyzy haýyş edýäris');
-              // formPhone.setAttribute('data-msg-required', 'Telefon belgiňizi ýazmagyňyzy haýyş edýäris');
-              // catalogLinkBg.setAttribute('href', 'docs/bgcatalogtm.pdf');
+              formName.placeholder = 'At *';
+              formNumber.placeholder = 'Telefon nomer *';
+              formMessage.placeholder = 'Hat *';
               blackLogo.setAttribute('src', 'img/logotextblacktm.png');
               whiteLogo.setAttribute('src', 'img/logotextwhitetm.png');
               aboutViewMore.setAttribute('href', 'documents/docru.pdf')
               console.log(loc)
           }
           if (lang == 'en'){
-              // formName.placeholder = 'Name';
-              // formPhone.placeholder = 'Phone number';
-              // formName.setAttribute('data-msg-required', 'Please enter your name');
-              // formPhone.setAttribute('data-msg-required', 'Please enter your phone');
-              // catalogLinkBg.setAttribute('href', 'docs/bgcatalogen.pdf');
+              formName.placeholder = 'Name *';
+              formNumber.placeholder = 'Phone Number *';
+              formMessage.placeholder = 'Message *';
               blackLogo.setAttribute('src', 'img/logotextblacken.png');
               whiteLogo.setAttribute('src', 'img/logotextwhiteen.png');
               aboutViewMore.setAttribute('href', 'documents/docru.pdf')
