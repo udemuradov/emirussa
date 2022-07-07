@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .arch-plan {
   position: relative;
 }
@@ -275,7 +276,7 @@
   font-family: "FontAwesome";
   font-weight: 900;
   color: #FFF;
-  content: "\f06e";
+  content: "";
   font-size: 40px;
   height: 30px;
   position: absolute;
@@ -316,7 +317,7 @@
   font-family: "FontAwesome";
   font-weight: 900;
   color: #FFF;
-  content: "\f06e";
+  content: "";
   font-size: 40px;
   height: 30px;
   position: absolute;
@@ -568,8 +569,8 @@
   display: flex;
   content: "";
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 0 rgb(0, 0, 0);
-          box-shadow: 0 0 0 0 rgb(0, 0, 0);
+  -webkit-box-shadow: 0 0 0 0 black;
+          box-shadow: 0 0 0 0 black;
   margin: 10px;
   height: 100px;
   width: 100px;
@@ -1254,7 +1255,8 @@
 
 .mobile-nav-toggle i {
   margin: 18px 18px 0 0;
-  color: #065e77;
+  color: #00bc50;
+  font-size: 28px;
 }
 
 .mobile-nav-overly {
@@ -1569,6 +1571,10 @@
     margin-bottom: 20px;
   }
 
+  .sl-nav {
+    display: none;
+  }
+
   #header {
     height: 80px;
   }
@@ -1580,9 +1586,6 @@
 
   .logo {
     margin-top: 10px;
-  }
-  .logo img {
-    width: 80px;
   }
 
   #topbar {
@@ -1897,6 +1900,10 @@ h6 {
     margin-bottom: 20px;
   }
 
+  .sl-nav {
+    display: none;
+  }
+
   #header {
     height: 80px;
   }
@@ -1908,9 +1915,6 @@ h6 {
 
   .logo {
     margin-top: 10px;
-  }
-  .logo img {
-    width: 80px;
   }
 
   #topbar {

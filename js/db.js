@@ -103,7 +103,7 @@ var arrLang = {
       'services_cardtext4' : 'Dürli senagat pudaklarynda maslahat beriş hyzmatlary.',
       'services_cardtext5' : 'Dünýäniň öňdebaryjy öndürijilerinden enjamlar we himiki serişdeler bilen üpjünçilik.',
       'gallery_title' : '«Biz geljegimizi gurýarys»',
-      'gallery_text' : 'Kärhananyň, Türkmenistanyň kanunçylygyna laýyklykda aşakda görkezilen işleri ýerine ýetirmäge hukugy bar: gurluşyk we dizaýn işleri (41.20, 42.20, 42.91, 42.99, 43.1, 43.12, 43.22, 43.29, 43.31, 43.33, 43.34, 43.91, 43.99, 71.11, 71.12), ýöriteleşdirilen enjamlary işe girizmek we gazanlara gözegçilik (kody 42.3, 42.4), himiki önümleriň söwdasy (kod 46.75), ýörite ýük daşamak (49.41), elektrik we dizaýn işleri (42.22.10, 43.21.50, 71.11.40)',
+      'gallery_text' : 'Kärhananyň, Türkmenistanyň kanunçylygyna laýyklykda aşakda görkezilen işleri ýerine ýetirmäge hukugy bar: gurluşyk we taslama işleri (41.20, 42.20, 42.91, 42.99, 43.1, 43.12, 43.22, 43.29, 43.31, 43.33, 43.34, 43.91, 43.99, 71.11, 71.12), ýöriteleşdirilen enjamlary işe girizmek we gazanlara gözegçilik (kody 42.3, 42.4), himiki önümleriň söwdasy (kod 46.75), ýörite ýük daşamak (49.41), elektrotehniki we taslama işleri (42.22.10, 43.21.50, 71.11.40)',
       'contacts_title' : 'Biz size kömek üçin bärde',
       'contacts_text' : 'Kärhanamyzyň hyzmatdaşlygynyň maksady diňe bir gezeklik eltip bermek däl, eýsem müşderiniň uzak möhletleýin tehniki goldawy we pikirleri.',
       'contacts_loc1' : 'Baş ofis',
