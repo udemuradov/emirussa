@@ -269,7 +269,7 @@ function changeLang(lang){
               formMessage.placeholder = 'Hat *';
               blackLogo.setAttribute('src', 'img/logotextblacktm.png');
               whiteLogo.setAttribute('src', 'img/logotextwhitetm.png');
-              aboutViewMore.setAttribute('href', 'documents/docru.pdf')
+              aboutViewMore.setAttribute('href', 'documents/doctm.pdf')
               console.log(loc)
           }
           if (lang == 'en'){
@@ -278,7 +278,7 @@ function changeLang(lang){
               formMessage.placeholder = 'Message *';
               blackLogo.setAttribute('src', 'img/logotextblacken.png');
               whiteLogo.setAttribute('src', 'img/logotextwhiteen.png');
-              aboutViewMore.setAttribute('href', 'documents/docru.pdf')
+              aboutViewMore.setAttribute('href', 'documents/docen.pdf')
           }
       }
 }
